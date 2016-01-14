@@ -1,4 +1,6 @@
-#+Style: <link rel="stylesheet" type="text/css" href="SyntaxHighlighter.css" />
+#+BEGIN_COMMENT
+#+SETUPFILE: theme-bigblow-local.setup
+#+END_COMMENT
 * 第一个windows窗口程序
 #+BEGIN_SRC C++
 // HelloWin.cpp : Defines the entry point for the application.
@@ -84,4 +86,11 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	return (int) msg.wParam;
 }
 #+END_SRC
+
+一个典型的windows窗口程序有如下结构：
+- 程序入口_tWinMain。
+- 调用RegisterClassEx注册窗口类。
+- 调用CreateWindow创建窗口，窗口创建完成后ShowWindow及UpdateWindow。
+- 创建消息循环。上面调用UpdateWindow以后，窗口就已经显示在屏幕上了，这个时候需要让窗口能响应windows消息，需要循环调用GetMessage从窗口消息队列取消息，经过TranslateMessage转义后调用DispatchMessage派发给窗口消息处理过程。
+- 在窗口消息过程WndProc里处理感兴趣的消息。
 
