@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5CB00ED4-33E8-3942-9C10-1F352AD2A2D0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>skia</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">skia.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">skia</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">skia.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">skia</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">skia.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">skia</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">skia.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">skia</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party\skia\..\libjpeg-turbo;D:\workspace\uiengine\source\third_party\skia\..\libpng;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\src\xml;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/workspace/uiengine/source/third_party/skia/CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\third_party\skia\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\android\SkBitmapRegionCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\android\SkBitmapRegionDecoder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\c\sk_paint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\c\sk_surface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkAndroidCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpMaskCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpRLECodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpStandardCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkCodecImageGenerator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkMasks.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkMaskSwizzler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSampledCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSampler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSwizzler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkWbmpCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkPngCodec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAAClip.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAdvancedTypefaceMetrics.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAlphaRuns.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAnnotation.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAutoPixmapStorage.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBBHFactory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBigPicture.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmap.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapController.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapDevice.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcState.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcState_matrixProcs.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProvider.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapScaler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitMask_D32.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitRow_D16.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitRow_D32.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_A8.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_ARGB32.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_PM4f.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_RGB16.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_Sprite.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCachedData.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkChecksum.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkChunkAlloc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkClipStack.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorFilterShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorMatrixFilterRowMajor255.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorSpace.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorTable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkComposeShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkConfig8888.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkConvolver.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCubicClipper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkData.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDataTable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDebug.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeque.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDevice.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeviceLooper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeviceProfile.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDistanceFieldGen.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDither.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDocument.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDraw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDrawable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDrawLooper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdge.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdgeBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdgeClipper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkError.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFilterProc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFlattenable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFlattenableSerialization.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFloatBits.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFont.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontDescriptor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontLCDConfig.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontMgr.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontStream.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontStyle.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGeometry.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGlobalInitialization_core.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGlyphCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGraphics.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkHalf.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageCacherator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageFilterCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageGenerator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageInfo.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLightingShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLinearBitmapPipeline.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLineClipper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLocalMatrixImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLocalMatrixShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMallocPixelRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMask.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskGamma.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrix.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrix44.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrixImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMD5.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMetaData.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMiniRecorder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMipMap.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkModeColorFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMultiPictureDraw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkNinePatchIter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkOpts.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPaint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPaintPriv.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathMeasure.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPicture.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureAnalyzer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureContentInfo.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureData.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureFlat.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureImageGenerator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPicturePlayback.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureRecord.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureRecorder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPixelRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPixmap.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPoint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPoint3.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPtrRecorder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkQuadClipper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRasterClip.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRasterizer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkReadBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecord.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordDraw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordedDrawable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecorder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordOpts.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecords.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRefDict.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRegion.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRegion_path.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkResourceCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRRect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRTree.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRWBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScalar.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScalerContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Antihair.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_AntiPath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Hairline.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Path.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSemaphore.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSharedMutex.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpanProcs.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpecialImage.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpecialSurface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpinlock.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter4f.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter_ARGB32.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter_RGB16.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStream.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkString.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStringUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStroke.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStrokeRec.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStrokerPriv.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSwizzle.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTaskGroup.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTextBlob.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkThreadID.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTime.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTLS.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTSearch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTypeface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTypefaceCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkUnPreMultiply.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkValidatingReadBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkVarAlloc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkVertState.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkWriteBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkWriter32.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermode.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermode4f.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermodeF16.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermodeInterpretation.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkYUVPlanesCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\Sk4fGradientBase.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\Sk4fLinearGradient.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkClampRange.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkGradientBitmapCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkGradientShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkLinearGradient.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkRadialGradient.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkSweepGradient.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient_gpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\GrAlphaThresholdFragmentProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\GrCircleBlurFragmentProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\Sk1DPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\Sk2DPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkAlphaThresholdFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArcToPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArithmeticMode.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArithmeticMode_gpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurDrawLooper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurMask.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurMaskFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorCubeFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorFilterImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorMatrix.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorMatrixFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkComposeImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkCornerPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDashPathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDiscretePathEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDisplacementMapEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDropShadowImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkEmbossMask.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkEmbossMaskFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkGpuBlurUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkImageSource.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLayerDrawLooper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLayerRasterizer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLightingImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLumaColorFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMagnifierImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMatrixConvolutionImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMergeImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMorphologyImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkOffsetImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPackBits.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPaintFlagsDrawFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPaintImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPerlinNoiseShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPictureImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTableColorFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTableMaskFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTestImageFilters.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTileImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkXfermodeImageFilter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkFontMgr_indirect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkGScalerContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkRandomScalerContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkRemotableFontMgr.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkTestScalerContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAConvexPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAConvexTessellator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAADistanceFieldPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAFillRectBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAHairLinePathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAALinearizingConvexPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAStrokeRectBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAtlasTextBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrCopySurfaceBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDashLinePathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDefaultPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawAtlasBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawPathBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawVerticesBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrMSAAPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNinePatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNonAAFillRectBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNonAAStrokeRectBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrPLSPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrRectBatchFactory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrStencilAndCoverPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrTessellatingPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrVertexBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBezierEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBicubicEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBitmapTextGeoProc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConfigConversionEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConstColorProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConvexPolyEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConvolutionEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrCoverageSetOpXP.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrCustomXfermode.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDashingEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDisableColorXP.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDistanceFieldGeoProc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDitherEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrGammaEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrMatrixConvolutionEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrOvalEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrPorterDuffXferProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrRRectEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrSimpleTextureEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrSingleTextureEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrTextureDomain.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrTextureStripAtlas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrXfermodeFragmentProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrYUVEffect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\android\GrGLCreateNativeInterface_android.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLProgramBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLShaderStringBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLSLPrettyPrint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLAssembleInterface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLBuffer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLCaps.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLCreateNullInterface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLDefaultInterface_native.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLExtensions.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGLSL.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGpuProgramCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLInterface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPathRange.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPathRendering.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgram.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgramDataManager.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgramDesc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLRenderTarget.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLStencilAttachment.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTestInterface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTexture.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTextureRenderTarget.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLUniformHandler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLUtil.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLVaryingHandler.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLVertexArray.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mac\GrGLCreateNativeInterface_mac.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\win\GrGLCreateNativeInterface_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSL.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLBlend.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLCaps.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentShaderBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryShaderBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLPrimitiveProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLProgramBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLProgramDataManager.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLShaderBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLUtil.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLVarying.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLVertexShaderBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLXferProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrAuditTrail.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchAtlas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchFlushState.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchTest.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBlend.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBlurUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBufferAllocPool.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrCaps.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrClip.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrClipMaskManager.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrCoordTransform.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDefaultGeoProcFactory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawingManager.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawTarget.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrFragmentProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuFactory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuResource.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuResourceRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrImageIDTextureAdjuster.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrInvariantOutput.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerAtlas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerHoister.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrMemoryPool.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrOvalRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPaint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRange.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRendererChain.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRendering.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRenderingDrawContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPipeline.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPipelineBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPrimitiveProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcessorUnitTest.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcOptInfo.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProgramElement.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRecordReplaceDraw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRectanizer_pow2.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRectanizer_skyline.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrReducedClip.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRenderTarget.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRenderTargetProxy.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrResourceCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrResourceProvider.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrShape.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSoftwarePathRenderer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStencilAttachment.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStencilSettings.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStyle.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSurface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSurfaceProxy.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSWMaskHelper.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTessellator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTestUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTexture.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureAccess.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureParamsAdjuster.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureProvider.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureProxy.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureToYUVPlanes.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTraceMarker.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrXferProcessor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrYUVProvider.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGpuDevice.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGpuDevice_drawTexture.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGr.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGrPixelRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGrTexturePixelRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextBlob.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextBlob_regenInBatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrBatchFontCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrDistanceFieldAdjustTable.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrStencilAndCoverTextContext.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrTextBlobCache.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrTextUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImageShader.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Generator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Gpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Raster.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface_Gpu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface_Raster.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkARGBImageEncoder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkForceLinking.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkImageEncoder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkImageEncoder_Factory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkKTXImageEncoder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkMovie.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkMovie_FactoryDefault.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\lazy\SkDiscardableMemoryPool.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\lazy\SkDiscardablePixelRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\opts_check_x86.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapFilter_opts_SSE2.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSE2.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSSE3.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBlitRow_opts_SSE2.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkOpts_sse41.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkOpts_ssse3.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkAddIntersections.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDConicLineIntersection.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDCubicLineIntersection.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDCubicToQuads.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDLineIntersection.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDQuadLineIntersection.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkIntersections.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpAngle.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpCoincidence.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpContour.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpCubicHull.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpEdgeBuilder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpSegment.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpSpan.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCommon.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsConic.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCubic.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCurve.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsDebug.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsLine.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsOp.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsPoint.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsQuad.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsRect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsSimplify.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTightBounds.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTSect.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTypes.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsWinding.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathWriter.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkReduceOrder.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_android.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_stdio.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDiscardableMemory_none.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontHost_mac.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontHost_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontMgr_win_dw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontMgr_win_dw_factory.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkGlobalInitialization_default.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageEncoder_CG.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageEncoder_WIC.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageGeneratorWIC.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageGenerator_skia.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkMemory_malloc.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSEnvironment.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSFile_stdio.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSFile_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSLibrary_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkRemotableFontMgr_win_dw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkScalerContext_win_dw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkTLS_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkTypeface_win_dw.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\sfnt\SkOTTable_name.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\sfnt\SkOTUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\mac\SkCreateCGImageRef.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\mac\SkStream_mac.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBase64.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBitmapSourceDeserializer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBitSet.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBoundaryPatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCamera.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCanvasStack.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCanvasStateUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkDashPath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkDumpCanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkEventTracer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkFrontBufferedStream.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkInterpolator.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkLayer.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkMatrix22.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkMeshUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNinePatch.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNullCanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNWayCanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkOSFile.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPaintFilterCanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParse.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParseColor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParsePath.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPatchGrid.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPatchUtils.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkRGBAToYUV.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkRTConf.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextBox.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_ASTC.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_LATC.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_R11EAC.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkThreadUtils_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkWhitelistChecksums.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkWhitelistTypefaces.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkAutoCoInitialize.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWrite.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWriteFontFileStream.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWriteGeometrySink.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkHRESULT.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkIStream.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkWGL_win.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkEvent.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkEventSink.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\Views\SkOSMenu.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkTagList.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkView.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkViewPriv.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkWindow.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xml\SkDOM.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xml\SkXMLParser.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkDocument_XPS.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkDocument_XPS_None.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkXPSDevice.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\common\etc1\etc1.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\common\ktx\ktx.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pdf\SkDocument_PDF_None.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace/uiengine/source/ZERO_CHECK.vcxproj">
+      <Project>DA8AB4BA-C0D3-32DF-8E8A-9005C1B0DAD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/third_party/libpng/png.vcxproj">
+      <Project>E2DBB048-10C9-3163-8809-20B0625E6DAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/third_party/zlib/zlib.vcxproj">
+      <Project>13E468D7-E6E5-3639-AC83-8380C9417A26</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
