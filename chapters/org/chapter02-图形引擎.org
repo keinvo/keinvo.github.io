@@ -1,0 +1,9 @@
+﻿#+OPTIONS: ^:nil
+
+#+TITLE: 第二章 图形引擎
+
+我们要实现一个界面引擎，必然要频繁地和绘制打交道，所有的图形绘制相关的部分可以抽象成一个独立的部分-图形引擎。图形引擎是界面引擎的一部分，它负责在指定的表面进行绘制。
+
+在“Hello Windows !”程序里， 我们调用DrawText在窗口客户区显示了一行文字。DrawText是Windows GDI提供的一个函数，GDI的全称是Graphics Device Interface（图形设备接口），它负责在显示器、打印机等图形显示设备上进行绘制。GDI是一套复杂的接口，包括几百个用于绘图的函数和一系列数据结构定义，GDI可以用来实现图形引擎，然而我们不打算这么做，我们的将选用一套现成的图形引擎：Skia。
+
+Skia是一个开源的2D图形处理引擎，被广泛应用在Chrome, Chrome OS, Chromium OS, Mozilla Firefox, Android, Sublime Text 3上。

@@ -1,0 +1,235 @@
+#+OPTIONS: ^:nil
+
+#+TITLE: 1.2 thunk技术
+
+在继续讨论窗口程序之前，我们先花点时间介绍一下thunk技术。thunk技术看似和窗口不沾边，实际上是我们下一节的基础，理解thunk技术对于后面一节非常重要。
+
+** 1.2.1 thunk技术起源
+Thunk技术最早应用在早期的编译器设计中，用来实现函数参数的传名调用（call by name）。传名调用的意思是，对于函数func(arg)，当调用func(1+2)，将参数1+2直接传入函数体，只有实际用到arg参数时，才计算1+2的值，这样最大的好处是如果func没有用到arg参数，就不用计算传入值，避免计算造成的性能损失。和传名调用对应的有传值调用（call by value），顾名思义就是先计算参数的值，再进行函数调用。
+
+编译器的传名调用实现，是将参数放入一个编译期生成的临时函数中，然后将临时函数的地址传入调用函数func。这个临时函数就叫thunk函数，比如下面的函数func(arg)：
+#+BEGIN_SRC C++
+function func(arg){ return arg * 2; }
+#+END_SRC
+对于调用
+#+BEGIN_SRC 
+func(1+2);
+#+END_SRC
+等价于：
+#+BEGIN_SRC C++
+function thunk(expression) { return CalcValue(epression); }
+func(thunk(1+2));
+#+END_SRC
+引入thunk函数后，对于func(arg)，实际传入的参数是thunk的地址，只有当需要用到arg函数时，才会调用thunk计算参数值。
+
+早期的thunk函数不断发展，到今天已经成为一项通用的编程技术，在很多地方都能看到thunk的思想。这里我们引用维基百科上的定义
+#+BEGIN_QUOTE
+/In computer programming, a thunk is a subroutine that is created, often automatically, to assist a call to another subroutine. Thunks are primarily used to represent an additional calculation that a subroutine needs to execute, or to call a routine that does not support the usual calling mechanism./
+#+END_QUOTE
+#+BEGIN_QUOTE
+/在计算机编程领域，thunk是一个子程序，这个子程序通常是自动生成的，用来辅组调用另一个子程序。thunk子程序主要用来表示额外的计算过程，或者用来调用一段常规调用机制不支持的代码。/
+#+END_QUOTE
+
+这个定义显得有点晦涩难懂，在我们的应用场景里，我们可以可以这样理解：thunk就是一段程序代码，这段代码用来在正常的函数调用之前修改栈数据。thunk不一定是一个函数（子程序）。为什么会需要thunk修改栈数据，我们来具体看一下下面的例子。
+
+** 1.2.2 thunk技术的典型应用
+我们经常遇到需要在静态函数里面访问类的成员/成员变量的情况，比如下面一个简单的秒表类：
+#+BEGIN_SRC C++
+class CStopWatch
+{
+protected:
+    unsigned int m_uValue;
+
+public:
+    CStopWatch()
+        : m_uValue(0){}
+
+public:
+    void Show()
+    {
+        std::cout << m_uValue << std::endl;
+    }
+
+    void Start()
+    {
+        ::SetTimer(NULL, 0, 1000, TimerProc); // 创建一个间隔1s的定时器
+    }
+
+    static void CALLBACK TimerProc(HWND hWnd, UINT uMsg, 
+                                 UINT iTimerID, DWORD dwTime)
+    {
+        ++ m_uValue;
+        Show();
+    }
+};
+#+END_SRC
+上面的CStopWatch类，我们在timer回调函数里面修改当前秒表计数，并打印在控制台，编译器会给出如下错误：
+#+BEGIN_SRC C++
+void static CALLBACK TimerProc(HWND hWnd, UINT uMsg, 
+        UINT iTimerID, DWORD dwTime)
+{
+    m_uValue ++; // error C2597: illegal reference to non-static member 'CStopWatch::m_uValue'
+    Show();      // error C2352: 'CStopWatch::Show' : illegal call of non-static member function
+}
+#+END_SRC
+想必上面的编译器错误大家一看就明白了，类的静态成员函数无法访问非静态成员和非静态成员函数。这个问题最简单的解决办法，用个静态成员变量来存储this指针，在TimerProc里拿着这个this指针来操作该对象。
+#+BEGIN_SRC C++
+class CStopWatch
+{
+public:
+    CStopWatch()
+        : m_uValue(0){}
+
+public:
+    void Start()
+    {
+        s_pThis = this;
+        ::SetTimer(NULL, 0, 1000, TimerProc); // 创建一个间隔1s的定时器
+    }
+
+protected:
+    void AddValue(){ m_uValue ++; }
+
+    void Show(){ std::cout << m_uValue << std::endl; }
+
+    static void CALLBACK TimerProc(HWND hWnd, UINT uMsg, 
+        UINT iTimerID, DWORD dwTime)
+    {
+        CStopWatch *pWatch = (CStopWatch*)s_pThis;
+        if(pWatch)
+        {
+            pWatch->AddValue();
+            pWatch->Show();
+        }        
+    }
+
+protected:
+    unsigned int m_uValue;
+    static void *s_pThis;
+};
+#+END_SRC
+上面的解决方案，实际上就是让静态成员函数拿到一个this指针，有了this指针就可以调用类的成员了。我们可以用thunk技术来实现上面的方案。
+
+我们先分析一下，TimerProc只能访问到两类数据：全局变量和函数参数。上面用静态成员变量存储this指针就是利用全局变量，那另一种方案就是利用函数参数了。这里有人会问了，TimerProc的参数是调用者传给我们的，我们连调用者都不知道是谁，怎么能把this指针当参数传进来呢？要回答这个问题我们先要了解函数调用的一些实现原理，下面的内容需要一些win32汇编的知识，不过我们尽可能言简意赅。
+
+发生函数调用时，函数参数被按一定顺序压入栈中，压栈的顺序由函数调用方式指定。比如TimerProc函数的声明里面CALLBACK指定了该函数调用方式为__stdcall，__stdcall类型的函数调用，参数从右到左依次入栈，TimerProc函数参数入栈指令大致如下
+#+BEGIN_SRC C
+push dwTime;
+push iTimerID;
+push uMsg;
+push hWnd;
+#+END_SRC
+参数压栈完成后，是返回地址入栈。返回地址就是发生函数调用位置的下一条指令地址。这个地址用来在TimerProc函数调用结束后返回到调用TimerProc位置的下一行继续执行。
+#+BEGIN_SRC C
+push retaddress;
+#+END_SRC
+至此，参数和返回地址入栈完毕，跳转到TimerProc
+#+BEGIN_SRC C
+jmp TimerProc
+#+END_SRC
+此时程序的执行流跳转到TimerProc继续执行，这样就完成了TimerProc的调用过程。
+
+上面的每次入栈指令都是由系统寄存器esp完成的，esp类似于一个永远指向栈顶的指针。每次入栈过程实际上就是先移动esp(esp-4，整个栈是个从高地址向低地址生长)，然后在新的esp位置写入入栈值。我们用[esp]表示esp指向的值，push val的实现可以描述如下
+#+BEGIN_SRC C
+sub esp, 4;
+mov [esp],val;
+#+END_SRC
+在进入TimerProc函数后，esp指向返回地址retaddress，四个传入参数在栈上的位置分别为hWnd:[esp+0x04]，uMsg:[esp+0x08]，iTimerID:[esp+0x0c]，dwTime:[esp+0x10]。我们就选hWnd参数来替我们传递this指针，只要我们在jmp TimerProc前，执行mov [esp+0x04],this就可以了。这里结合我们前面对thunk的解释（thunk就是一段程序代码，这段代码用来在正常的函数调用之前修改栈数据），是该我们的thunk出马了。我们来看看这个神奇的thunk长什么样。
+#+BEGIN_SRC C++
+struct SimpleThunk
+{
+    DWORD   m_mov;
+    DWORD   m_this;
+    BYTE    m_jmp;
+    DWORD   m_relproc;
+    BOOL Init(DWORD_PTR proc, void *pThis)
+    {
+        // mov dword ptr [esp+0x04], pThis
+        m_mov = 0x042444C7;
+        m_this = PtrToUlong(pThis);
+
+        // jmp proc
+        m_jmp = 0xe9;
+        m_relproc = DWORD((INT_PTR)proc - ((INT_PTR)this+sizeof(SimpleThunk)));
+
+        return TRUE;
+    }
+}
+#+END_SRC
+SimpleThunk是个包括四个成员变量和一个Init函数的结构体，m_mov和m_this组合，构成汇编指令mov dword ptr [esp+0x04]的指令码, pThis。m_jmp和m_relproc组合，构成汇编指令jmp proc的指令码。注意Init函数传入参数proc就是实际的TimerProc地址，pThis就是CStopWatch类对象的地址。Init函数体里m_relproc的赋值语句需要解释一下
+#+BEGIN_SRC C++
+m_relproc = DWORD((INT_PTR)proc - ((INT_PTR)this+sizeof(SimpleThunk)));
+#+END_SRC
+因为汇编里面jmp后跟的地址实际是跳转地址与当前代码代码的下一条指令地址的偏移值，这里我们要跳转到proc，偏移值就是：proc地址-(SimpleThunk地址+SimpleThunk大小)。
+
+有了上面的SimpleThunk，我们对CStopWatch做相应的修改
+#+BEGIN_SRC C++
+class CStopWatch
+{
+public:
+    CStopWatch()
+        : m_uValue(0)
+        , m_hWnd(NULL)
+    { 
+        m_pThunk = new SimpleThunk();
+        m_pThunk->Init((DWORD_PTR)TimerProc, this);
+    }
+
+    ~CStopWatch() { delete m_pThunk; }
+
+public:
+    void Start()
+    {
+        TIMERPROC proc = (TIMERPROC)m_pThunk;
+        m_hWnd = NULL;
+        ::SetTimer(m_hWnd, 0, 1000, proc); // 创建一个间隔1s的定时器
+    }
+
+protected:
+    void AddValue(){ m_uValue ++; }
+
+    void Show(){ std::cout << m_uValue << std::endl; }
+
+    static void CALLBACK TimerProc(HWND hWnd, UINT uMsg, 
+        UINT iTimerID, DWORD dwTime, DWORD_PTR This)
+    {
+        CStopWatch *pThis = (CStopWatch*)hWnd;
+        {
+            pThis->AddValue();
+            pThis->Show();
+        }
+    }
+
+protected:
+    unsigned int m_uValue;
+    HWND m_hWnd;
+    SimpleThunk *m_pThunk;
+};
+#+END_SRC
+我们在CStopWatch类成员变量里面增加m_pThunk，在构造函数里面分配内存并调用Init。::SetTimer时实际传入的是m_pThunk，这样，每次定时器回调，我们的thunk开始执行，都能将this指针顺利替换到hWnd所在的栈位置，然后调用真正的TimerProc。在TimerProc里，我们将hWnd强制转换回this指针，通过this指针调用类的成员变量。这个例子里面我们的hWnd值为空，可以替换成this指针。如果遇到hWnd有值的情况，只需将真实的hWnd值保存在成员变量m_hWnd里。
+
+上面的代码，编译，执行，crash!!!问题出在我们的SimpleThunk上，实际上我们的thunk还有两个问题没有解决。
+- DEP。我们将m_pThunk作为回调传入::SetTimer，但是实际上m_pThunk指向的只是一个结构体、一块数据，这块数据是不可执行的。Windows从XP sp2开始引入了DEP-数据执行保护机制，防止数据被当作代码执行。对于我们的SimpleThunk，我们想让它所在的内存是可执行，最简单的方式，我们自己实现new和delete。
+#+BEGIN_SRC C++
+struct SimpleThunk
+{
+    // ...
+    void* operator new(size_t)
+    {
+        return ::VirtualAlloc(NULL, PAGE_SIZE, MEM_RESERVE|MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+    }
+    void operator delete(void* p)
+    {
+        ::VirtualFree(p, 0, MEM_RELEASE);
+    }
+};
+#+END_SRC
+- 数据对齐。SimpleThunk结构体里面四个成员，我们预期是让它们两两组合，构成两句汇编指令，但是实际调试会发现m_jmp本该紧挨着m_relproc，但是内存里面却看到它们之间被填充了三个0字节。这是因为编译器将我们的SimpleThunk结构体数据按默认4字节对齐了，本该占用字节的m_jmp实际占用了4字节。我们可以用下面的预处理指令强制让SimpleThunk以1字节对齐。
+#+BEGIN_SRC C++
+#pragma pack(push,1)
+struct SimpleThunk
+{ // ... };
+#pragma pack(pop)
+#+END_SRC
+修改后的完整代码参见源代码StopWatchUseThunk。
+
