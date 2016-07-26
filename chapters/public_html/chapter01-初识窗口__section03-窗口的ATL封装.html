@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>1.3 窗口的ATL封装</title>
+<!-- 2016-06-16 周四 23:21 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="keinvo" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://www.i3s.unice.fr/~malapert/css/worg.min.css"/>
+<script type="text/javascript" src="http://www.i3s.unice.fr/~malapert/js/ga.min.js"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">1.3 窗口的ATL封装</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1.3.1 ATL::CWindow</a></li>
+<li><a href="#sec-2">1.3.2 ATL::CWindowImpl</a>
+<ul>
+<li><a href="#sec-2-1">ATL::CWindowImpl的消息处理</a></li>
+<li><a href="#sec-2-2">ATL::CWindowImpl的消息映射宏</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+在没有任何辅组的情况下进行界面编程是比较繁琐复杂的，从上一节我们看到，仅仅是实现一个最简单的窗口就需要几十行代码。除此之外，windows界面编程另一个烦人的事情是我们只能在窗口过程WndProc里面去处理界面消息，为了实现一个简单的窗口，我们往往需要处理大量的Windows消息，这么大量的消息处理都放在WndProc里面，会出现一个很臃肿的switch..case结构。为了简化界面编程，ATL提供了相应的封装。
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">1.3.1 ATL::CWindow</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+ATL::CWindow提供了对HWND和user32.dll导出函数的封装。在ATL::CWindow的定义里我们可以看到，CWindow的其中一个成员变量就是HWND m_hWnd。在界面编程中，我们所有的界面操作都需要指定作用在哪个窗口上，所以几乎所有的user32导出函数都需要提供HWND作为第一个参数，CWindow封装了这些函数，提供了无HWND参数的版本。
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-C++">class CWindow
+{
+public:
+    HWND m_hWnd;
+
+    CWindow(HWND hWnd = NULL) throw() :
+        m_hWnd(hWnd)
+    {
+    }
+
+    CWindow&amp; operator=(HWND hWnd) throw()
+    {
+        m_hWnd = hWnd;
+        return *this;
+    }
+
+    // ...
+
+    HWND Create(LPCTSTR lpstrWndClass, HWND hWndParent, _U_RECT rect = NULL, LPCTSTR szWindowName = NULL,
+            DWORD dwStyle = 0, DWORD dwExStyle = 0,
+            _U_MENUorID MenuOrID = 0U, LPVOID lpCreateParam = NULL) throw()
+    {
+        // ...
+
+        HWND hWnd = ::CreateWindowEx( ... );
+
+        ATLASSUME(m_hWnd == hWnd);
+
+        return hWnd;
+    }
+
+    // ...
+}
+</pre>
+</div>
+<p>
+有了CWindow，我们原先的下面代码
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">int APIENTRY _tWinMain(HINSTANCE hinst,
+                    HINSTANCE /*hinstPrev*/,
+                    LPTSTR pszCmdLine,
+                    int nCmdShow) {
+    // Register the main window class
+    // ...
+
+    HWND hwnd = ::CreateWindowEx(WS_EX_CLIENTEDGE,
+                            pszMainWndClass,
+                            __T("Windows Application"),
+                            WS_OVERLAPPEDWINDOW,
+                            CW_USEDEFAULT, 0,
+                            CW_USEDEFAULT, 0,
+                            0, 0, hinst, 0);
+    if( !hwnd ) return -1;
+
+    ::ShowWindow(hwnd, nCmdShow);
+    ::UpdateWindow(hwnd);
+
+    // Main message loop
+    // ...
+}
+
+LRESULT CALLBACK WndProc(HWND hwnd, UINT nMsg, WPARAM wparam,LPARAM lparam) {
+    switch( nMsg ) {
+    case WM_PAINT: {
+        PAINTSTRUCT ps;
+        HDC hdc = ::BeginPaint(hwnd, &amp;ps);
+        RECT rect; ::GetClientRect(hwnd, &amp;rect);
+        ::DrawText(hdc, __T("Hello, Windows"), -1, &amp;rect, 
+            DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        ::EndPaint(hwnd, &amp;ps);
+    }
+    break;
+
+    // ...
+
+    default:
+        return ::DefWindowProc(hwnd, nMsg, wparam, lparam);
+        break;
+    }
+
+    // ...
+}
+</pre>
+</div>
+<p>
+除了DefWindowProc，其他用到hwnd的地方(CreateWindowEx, ShowWindow, UpdateWindow等等)，我们都可以用CWindow实现
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">int APIENTRY _tWinMain(HINSTANCE hinst,
+                       HINSTANCE /*hinstPrev*/,
+                       LPTSTR    pszCmdLine,
+                       int       nCmdShow) {
+    // Register the main window class
+    // ...
+
+    // Create the main window
+    CWindow wnd;
+    wnd.Create(pszMainWndClass, NULL, CWindow::rcDefault, 
+        __T("Windows Application"), WS_OVERLAPPEDWINDOW);
+    if (!wnd){ return -1; }
+
+    // Show the main window
+    wnd.ShowWindow(nCmdShow);
+    wnd.UpdateWindow();
+
+    // Main message loop
+    MSG msg;
+    while( GetMessage(&amp;msg, 0, 0, 0) ) {
+       TranslateMessage(&amp;msg);
+       DispatchMessage(&amp;msg);
+    }
+
+    return msg.wParam;
+}
+
+LRESULT CALLBACK WndProc(HWND hwnd, UINT nMsg, WPARAM wparam,
+                         LPARAM lparam) {
+    CWindow wnd(hwnd);
+    switch( nMsg ) {
+        case WM_PAINT: {
+            PAINTSTRUCT ps;
+            HDC hdc = wnd.BeginPaint(&amp;ps);
+            RECT rect = {0};
+            wnd.GetClientRect(&amp;rect);
+            ::DrawText(hdc, __T("Hello, Windows"), -1, &amp;rect,
+              DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+            wnd.EndPaint(&amp;ps);
+            }
+            break;
+
+        // ...
+
+        default:
+            return ::DefWindowProc(hwnd, nMsg, wparam, lparam);
+            break;
+    }
+
+    return 0;
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">1.3.2 ATL::CWindowImpl</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+ATL::CWindow对HWND的封装看上去并没有为我们减少多少代码量，下面我们要介绍的ATL::CWindowImpl将真正简化我们的窗口程序。CWindowImpl提供了窗口创建过程和消息处理等一系列操作的封装。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">template &lt;class T, class TBase /* = CWindow */, class TWinTraits /* = CControlWinTraits */&gt;
+class ATL_NO_VTABLE CWindowImpl :
+    public CWindowImplBaseT&lt; TBase, TWinTraits &gt;
+{
+public:
+    DECLARE_WND_CLASS(NULL)
+
+    HWND Create(
+        _In_opt_ HWND hWndParent,
+        _In_ _U_RECT rect = NULL,
+        _In_opt_z_ LPCTSTR szWindowName = NULL,
+        _In_ DWORD dwStyle = 0,
+        _In_ DWORD dwExStyle = 0,
+        _In_ _U_MENUorID MenuOrID = 0U,
+        _In_opt_ LPVOID lpCreateParam = NULL)
+    {
+        // ...
+    }
+}
+</pre>
+</div>
+<p>
+可以看到CWindowImpl是一个模版类，实际从CWindow继承。CWindowImpl封装了窗口的注册和创建过程，有了CWindowImpl类后，我们的窗口创建部分可以这么写
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">class CMainWindow : public CWindowImpl&lt;CMainWindow&gt; {...};
+
+// Entry point
+int APIENTRY _tWinMain(HINSTANCE hinst,
+  HINSTANCE /*hinstPrev*/,
+  LPTSTR    pszCmdLine,
+  int       nCmdShow) {
+
+  // Initialize global strings
+  LoadString(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
+
+  CMainWindow wnd;
+
+  wnd.Create( 0, CWindow::rcDefault, szTitle,
+    WS_OVERLAPPEDWINDOW, WS_EX_CLIENTEDGE );
+  if( !wnd ) {
+    return FALSE;
+  }
+  wnd.CenterWindow( );
+  wnd.ShowWindow( nCmdShow );
+  wnd.UpdateWindow( );
+
+  // Show the main window, run the message loop
+  ...
+
+  return msg.wParam;
+}
+</pre>
+</div>
+<p>
+我们基于CWindowImpl实现了一个窗口类CMainWindow，创建窗口的时候，直接定义一个实例wnd，调用其成员函数Create就创建了一个窗口，CWindowImpl替我们完成了窗口的注册和CreateWindowEx的调用。
+</p>
+
+<p>
+上面就是CWindowImpl对窗口注册和创建过程的简化，下面我们将讨论CWindowImpl对窗口过程(WndProc)的封装。在此之前，有必要先了解一下Thunk技术，CWindowImpl对窗口过程的封装就是利用Thunk技术实现的。
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">ATL::CWindowImpl的消息处理</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+我们知道，一个窗口的窗口过程是在注册窗口的时候由WNDCLASSEX结构的lpfnWndProc字段指定，前面我们创建窗口时指定WndProc为我们的窗口过程
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">LPCTSTR     pszMainWndClass = __T("HelloWinApp");
+WNDCLASSEX  wc = { sizeof(WNDCLASSEX) };
+// ...
+wc.lpszClassName = pszMainWndClass;
+wc.lpfnWndProc = WndProc;
+if( !::RegisterClassEx(&amp;wc) ) return -1;
+</pre>
+</div>
+<p>
+前面我们提到过，Windows界面编程往往需要处理大量的消息，这些消息又必须在WndProc里处理，这样会导致一个臃肿的switch&#x2026;case结构。比这更严重的是，WndProc不能为类的普通成员函数（因为类的普通成员函数调用参数需要一个this指针，而WndProc不满足。），只能作为类的静态成员函数，导致WndProc只能访问全局变量、调用全局的函数，这样实际上是非常不方便的。我们希望能像下面这样处理窗口消息
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">class CMainWindow
+{
+    LRESULT HandleMsg(HWND hwnd, UINT nMsg, WPARAM wparam, LPARAM lparam) 
+    {
+    LRESULT lResult = 0;
+    switch( nMsg ) {
+        case WM_PAINT: HandleWMPaint(); break;
+        case WM_DESTROY: HandleWMDestroy(); break;
+        // ...
+    }
+
+    return lResult;
+  }
+}
+</pre>
+</div>
+<p>
+下面我们来看看ATL::CWindowImpl如何通过thunk技术实现我们这个需求。
+</p>
+
+<p>
+ATL::CWindowImpl的定义里我们看到有下面这行
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">DECLARE_WND_CLASS(NULL)
+</pre>
+</div>
+<p>
+DECLARE_WND_CLASS是一个宏定义，它定义了一个CWndClassInfo结构的wc，并将CWndClassInfo结构的pWndProc字段初始化为StartWindowProc
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">struct _ATL_WNDCLASSINFOW
+{
+    WNDCLASSEXW m_wc;
+    LPCWSTR m_lpszOrigName;
+    WNDPROC pWndProc;
+    LPCWSTR m_lpszCursorID;
+    BOOL m_bSystemCursor;
+    ATOM m_atom;
+    WCHAR m_szAutoName[5+sizeof(void*)*CHAR_BIT];
+
+    ATOM Register(_In_ WNDPROC* p)
+    {
+        return AtlWinModuleRegisterWndClassInfoW(&amp;_AtlWinModule, &amp;_AtlBaseModule, this, p);
+    }
+};
+
+typedef _ATL_WNDCLASSINFOW CWndClassInfoW;
+
+// ...
+
+#define DECLARE_WND_CLASS(WndClassName) \
+static ATL::CWndClassInfo&amp; GetWndClassInfo() \
+{ \
+    static ATL::CWndClassInfo wc = \
+    { \
+        { sizeof(WNDCLASSEX), CS_HREDRAW | CS_VREDRAW | CS_DBLCLKS, StartWindowProc, \
+          0, 0, NULL, NULL, NULL, (HBRUSH)(COLOR_WINDOW + 1), NULL, WndClassName, NULL }, \
+        NULL, NULL, IDC_ARROW, TRUE, 0, _T("") \
+    }; \
+    return wc; \
+}
+</pre>
+</div>
+<p>
+这里指定了窗口过程为StartWindowProc，不再是我们之前的WndProc了。StartWindowProc是在CWindowImpl的基类CWindowImplBaseT里实现的。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">template &lt;class TBase, class TWinTraits&gt;
+LRESULT CALLBACK CWindowImplBaseT&lt; TBase, TWinTraits &gt;::StartWindowProc(
+    _In_ HWND hWnd,
+    _In_ UINT uMsg,
+    _In_ WPARAM wParam,
+    _In_ LPARAM lParam)
+{
+    CWindowImplBaseT&lt; TBase, TWinTraits &gt;* pThis = (CWindowImplBaseT&lt; TBase, TWinTraits &gt;*)_AtlWinModule.ExtractCreateWndData();
+    ATLASSERT(pThis != NULL);
+    if(!pThis)
+    {
+        return 0;
+    }
+    pThis-&gt;m_hWnd = hWnd;
+
+    // Initialize the thunk.  This is allocated in CWindowImplBaseT::Create,
+    // so failure is unexpected here.
+
+    pThis-&gt;m_thunk.Init(pThis-&gt;GetWindowProc(), pThis);
+    WNDPROC pProc = pThis-&gt;m_thunk.GetWNDPROC();
+    WNDPROC pOldProc = (WNDPROC)::SetWindowLongPtr(hWnd, GWLP_WNDPROC, (LONG_PTR)pProc);
+#ifdef _DEBUG
+    // check if somebody has subclassed us already since we discard it
+    if(pOldProc != StartWindowProc)
+        ATLTRACE(atlTraceWindowing, 0, _T("Subclassing through a hook discarded.\n"));
+#else
+    (pOldProc); // avoid unused warning
+#endif
+    return pProc(hWnd, uMsg, wParam, lParam);
+}
+</pre>
+</div>
+<p>
+我们看到，这里用到了thunk，再看一下这个thunk的定义，在atlstdthunk.h里有多个针对不同平台的thunk定义，我们只看x86平台
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">#if defined(_M_IX86)
+PVOID __stdcall __AllocStdCallThunk(VOID);
+VOID  __stdcall __FreeStdCallThunk(_In_opt_ PVOID);
+
+#pragma pack(push,1)
+struct _stdcallthunk
+{
+    DWORD   m_mov;          // mov dword ptr [esp+0x4], pThis (esp+0x4 is hWnd)
+    DWORD   m_this;         //
+    BYTE    m_jmp;          // jmp WndProc
+    DWORD   m_relproc;      // relative jmp
+    BOOL Init(
+        _In_ DWORD_PTR proc,
+        _In_opt_ void* pThis)
+    {
+        m_mov = 0x042444C7;  //C7 44 24 0C
+        m_this = PtrToUlong(pThis);
+        m_jmp = 0xe9;
+        m_relproc = DWORD((INT_PTR)proc - ((INT_PTR)this+sizeof(_stdcallthunk)));
+        // write block from data cache and
+        //  flush from instruction cache
+        FlushInstructionCache(GetCurrentProcess(), this, sizeof(_stdcallthunk));
+        return TRUE;
+    }
+    //some thunks will dynamically allocate the memory for the code
+    void* GetCodeAddress()
+    {
+        return this;
+    }
+    _Ret_opt_bytecount_x_(sizeof(_stdcallthunk)) void* operator new(_In_ size_t)
+    {
+        return __AllocStdCallThunk();
+    }
+    void operator delete(_In_opt_ void* pThunk)
+    {
+        __FreeStdCallThunk(pThunk);
+    }
+};
+#pragma pack(pop)
+</pre>
+</div>
+<p>
+可以看到，基本和我们的thunk一样。
+</p>
+
+<p>
+回到StartWindowProc，我们看到thunk初始化传入的实际窗口过程是WindowProc
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">pThis-&gt;m_thunk.Init(pThis-&gt;GetWindowProc(), pThis);
+
+virtual WNDPROC GetWindowProc()
+{
+    return WindowProc;
+}
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src src-C++">template &lt;class TBase, class TWinTraits&gt;
+LRESULT CALLBACK CWindowImplBaseT&lt; TBase, TWinTraits &gt;::WindowProc(
+    _In_ HWND hWnd,
+    _In_ UINT uMsg,
+    _In_ WPARAM wParam,
+    _In_ LPARAM lParam)
+{
+    CWindowImplBaseT&lt; TBase, TWinTraits &gt;* pThis = (CWindowImplBaseT&lt; TBase, TWinTraits &gt;*)hWnd;
+    // set a ptr to this message and save the old value
+    _ATL_MSG msg(pThis-&gt;m_hWnd, uMsg, wParam, lParam);
+    const _ATL_MSG* pOldMsg = pThis-&gt;m_pCurrentMsg;
+    pThis-&gt;m_pCurrentMsg = &amp;msg;
+    // pass to the message map to process
+    LRESULT lRes = 0;
+    BOOL bRet = pThis-&gt;ProcessWindowMessage(pThis-&gt;m_hWnd, uMsg, wParam, lParam, lRes, 0);
+
+    // ...
+}
+</pre>
+</div>
+<p>
+WindowProc里获取到pThis指针之后，直接将所有消息都传给成员函数ProcessWindowMessage处理。到这里就是这个thunk的全部工作，下面的消息处理，就可以由ProcessWindowMessage函数再根据不同消息分发给不同的成员函数。
+</p>
+
+<p>
+利用ATL::CWindowImpl，我们的窗口框架可以改写成这样
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-C++">#include "stdafx.h" // Includes windows.h and tchar.h
+#include &lt;atlbase.h&gt;
+#include &lt;atlwin.h&gt;
+
+class CMainWindow : public CWindowImpl&lt;CMainWindow&gt;
+{
+public:
+    virtual BOOL ProcessWindowMessage(HWND hwnd, UINT nMsg, WPARAM wparam,
+                                    LPARAM lparam, LRESULT &amp;lResult, DWORD /*dwMsgMapID*/) {
+    BOOL bHandled = TRUE;
+
+    switch( nMsg ) {
+        case WM_PAINT: lResult = OnPaint(); break;
+        case WM_DESTROY: lResult = OnDestroy(); break;
+        default: bHandled = FALSE; break;
+    }
+
+    return bHandled;
+  }
+
+private:
+    LRESULT OnPaint() {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(&amp;ps);
+        RECT rect; GetClientRect(&amp;rect);
+        DrawText(hdc, __T("Hello Windows !"), -1, &amp;rect,
+             DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        EndPaint(&amp;ps);
+        return 0;
+    }
+    LRESULT OnDestroy() {
+        PostQuitMessage(0);
+        return 0;
+    }
+};
+
+int APIENTRY _tWinMain(HINSTANCE hinst,
+                       HINSTANCE /*hinstPrev*/,
+                       LPTSTR    pszCmdLine,
+                       int       nCmdShow) {
+    CMainWindow wnd;
+    wnd.Create(0, CWindow::rcDefault, _T("CWindowImpl Demo"), WS_OVERLAPPEDWINDOW, WS_EX_CLIENTEDGE);
+    if(!wnd) { return -1; }
+
+    wnd.CenterWindow();
+    wnd.ShowWindow(nCmdShow);
+    wnd.UpdateWindow();
+
+    MSG msg;
+    while( GetMessage(&amp;msg, 0, 0, 0) ) {
+       TranslateMessage(&amp;msg);
+       DispatchMessage(&amp;msg);
+    }
+
+    return msg.wParam;
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">ATL::CWindowImpl的消息映射宏</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+除了利用thunk技术将消息转发给成员函数处理，ATL还提供了一组宏来进一步简化消息处理过程。这组宏通过建立消息和处理函数的一对一映射，省去了编写ProcessWindowMessage。这组宏以GEGIN_MSG_MAP开始，END_MSG_MAP结束。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">#define BEGIN_MSG_MAP(theClass) \
+public: \
+    BOOL ProcessWindowMessage(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam,\
+        _In_ LPARAM lParam, _Inout_ LRESULT&amp; lResult, _In_ DWORD dwMsgMapID = 0) \
+    { \
+        BOOL bHandled = TRUE; \
+        (hWnd); \
+        (uMsg); \
+        (wParam); \
+        (lParam); \
+        (lResult); \
+        (bHandled); \
+        switch(dwMsgMapID) \
+        { \
+        case 0:
+
+// ...
+
+#define END_MSG_MAP() \
+            break; \
+        default: \
+            ATLTRACE(ATL::atlTraceWindowing, 0, _T("Invalid message map ID (%i)\n"), dwMsgMapID); \
+            ATLASSERT(FALSE); \
+            break; \
+        } \
+        return FALSE; \
+    }
+</pre>
+</div>
+<p>
+BEGIN_MSG_MAP和END_MSG_MAP组成了一个ProcessWindowMessage函数，针对不同的消息，通过switch&#x2026;case分发到不同的处理函数。
+分发不同消息的宏是MESSAGE_HANDLER
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">#define MESSAGE_HANDLER(msg, func) \
+    if(uMsg == msg) \
+    { \
+        bHandled = TRUE; \
+        lResult = func(uMsg, wParam, lParam, bHandled); \
+        if(bHandled) \
+            return TRUE; \
+    }
+</pre>
+</div>
+<p>
+比如，我们要指定WM_PAINT的处理函数OnPaint，就可以这么写
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">BEGIN_MSG_MAP()
+    MESSAGE_HANDLER(WM_PAINT, OnPaint)
+END_MSG_MAP()
+</pre>
+</div>
+
+<p>
+于是，我们的窗口框架可以进一步简化
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">#include "stdafx.h" // Includes windows.h and tchar.h
+#include &lt;atlbase.h&gt;
+#include &lt;atlwin.h&gt;
+
+class CMainWindow : public CWindowImpl&lt;CMainWindow&gt;
+{
+    BEGIN_MSG_MAP(CMainWindow)
+        MESSAGE_HANDLER(WM_PAINT, OnPaint)
+        MESSAGE_HANDLER(WM_DESTROY, OnDestroy)
+    END_MSG_MAP()
+
+private:
+    LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled) {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(&amp;ps);
+        RECT rect; GetClientRect(&amp;rect);
+        DrawText(hdc, __T("Hello Windows !"), -1, &amp;rect,
+             DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        EndPaint(&amp;ps);
+
+        bHandled = TRUE;
+        return 0;
+    }
+    LRESULT OnDestroy(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled) {
+        PostQuitMessage(0);
+
+        bHandled = TRUE;
+        return 0;
+    }
+};
+
+int APIENTRY _tWinMain(HINSTANCE hinst,
+                       HINSTANCE /*hinstPrev*/,
+                       LPTSTR    pszCmdLine,
+                       int       nCmdShow) {
+    CMainWindow wnd;
+    wnd.Create(0, CWindow::rcDefault, _T("CWindowImpl Demo"), WS_OVERLAPPEDWINDOW, WS_EX_CLIENTEDGE);
+    if(!wnd) { return -1; }
+
+    wnd.CenterWindow();
+    wnd.ShowWindow(nCmdShow);
+    wnd.UpdateWindow();
+
+    MSG msg;
+    while( GetMessage(&amp;msg, 0, 0, 0) ) {
+       TranslateMessage(&amp;msg);
+       DispatchMessage(&amp;msg);
+    }
+
+    return msg.wParam;
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: keinvo</p>
+<p class="date">Created: 2016-06-16 周四 23:21</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
