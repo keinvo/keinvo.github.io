@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\uiengine\source\chapter-01\StopWatch\StopWatch.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\uiengine\source\chapter-01\StopWatch\stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\uiengine\source\chapter-01\StopWatch\stdafx.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\uiengine\source\chapter-01\StopWatch\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{6D283CE2-F3A3-37FB-ACE3-77A62BAC176E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
