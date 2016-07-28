@@ -202,7 +202,7 @@ int APIENTRY _tWinMain(HINSTANCE hinst,
 #+END_SRC
 我们基于CWindowImpl实现了一个窗口类CMainWindow，创建窗口的时候，直接定义一个实例wnd，调用其成员函数Create就创建了一个窗口，CWindowImpl替我们完成了窗口的注册和CreateWindowEx的调用。
 
-上面就是CWindowImpl对窗口注册和创建过程的简化，下面我们将讨论CWindowImpl对窗口过程(WndProc)的封装。在此之前，有必要先了解一下Thunk技术，CWindowImpl对窗口过程的封装就是利用Thunk技术实现的。
+上面就是CWindowImpl对窗口注册和创建过程的简化，下面我们将讨论CWindowImpl对窗口过程(WndProc)的封装。CWindowImpl对窗口过程的封装就是利用Thunk技术实现的。
 
 *** ATL::CWindowImpl的消息处理
 我们知道，一个窗口的窗口过程是在注册窗口的时候由WNDCLASSEX结构的lpfnWndProc字段指定，前面我们创建窗口时指定WndProc为我们的窗口过程
