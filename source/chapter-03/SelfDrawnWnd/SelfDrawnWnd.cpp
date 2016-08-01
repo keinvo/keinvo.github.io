@@ -1,15 +1,20 @@
 #include "stdafx.h" // Includes windows.h and tchar.h
 
-// #define InterlockedIncrement64(x) (*x)
-
-#include "NkWindow.h"
+#include "UIWindow.h"
 
 int APIENTRY _tWinMain(HINSTANCE hinst,
 					   HINSTANCE /*hinstPrev*/,
 					   LPTSTR    pszCmdLine,
 					   int       nCmdShow) {
-    CNkWindow wnd;
+    UIWindow wnd;
     wnd.put_background("abc.png");
+    wnd.CreateWin();
 
-    return wnd.RunMsgLoop();
+    MSG msg;
+    while( GetMessage(&msg, 0, 0, 0) ) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+
+    return 0;
 }

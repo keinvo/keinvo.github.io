@@ -1,0 +1,35 @@
+#+OPTIONS: ^:nil
+
+#+TITLE: 2.3 文字
+
+SkCanvas提供了drawText函数用来绘制文字，之所以单独作一节是因为打算后续补充字体等文字相关的内容。仅仅绘制文字是比较简单的。
+#+BEGIN_SRC C++
+void Draw(SkCanvas* canvas) {
+        canvas->clear(SK_ColorWHITE);
+
+        SkPaint paint1, paint2, paint3;
+
+        paint1.setTextSize(64.0f);
+        paint1.setAntiAlias(true);
+        paint1.setColor(0xff4281A4);
+        paint1.setStyle(SkPaint::kFill_Style);
+
+        paint2.setTextSize(64.f);
+        paint2.setAntiAlias(true);
+        paint2.setColor(0xff9CAFB7);
+        paint2.setStyle(SkPaint::kStroke_Style);
+        paint2.setStrokeWidth(SkIntToScalar(3));
+
+        paint3.setTextSize(64.0f);
+        paint3.setAntiAlias(true);
+        paint3.setColor(0xffE6B89C);
+        paint3.setTextScaleX(SkFloatToScalar(1.5f));
+
+        const char text[] = "Skia";
+        canvas->drawText(text, strlen(text), 20.0f, 64.0f,  paint1);
+        canvas->drawText(text, strlen(text), 20.0f, 144.0f, paint2);
+        canvas->drawText(text, strlen(text), 20.0f, 224.0f, paint3);
+    }
+#+END_SRC
+
+[[file:./img/02-text.png]]

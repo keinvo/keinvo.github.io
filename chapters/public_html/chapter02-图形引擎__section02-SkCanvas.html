@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>UI引擎设计</title>
-<!-- 2016-07-31 ���� 23:21 -->
+<title>2.2 SkCanvas</title>
+<!-- 2016-07-31 ���� 23:07 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -141,102 +141,157 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
-<h1 class="title">UI引擎设计</h1>
+<h1 class="title">2.2 SkCanvas</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">目录</a>
-<ul>
-<li><a href="#sec-1-1">第一章 初识窗口</a></li>
-<li><a href="#sec-1-2">第二章 图形引擎</a></li>
-<li><a href="#sec-1-3">第三章 基础控件</a></li>
-<li><a href="#sec-1-4">第四章 高级控件</a></li>
-<li><a href="#sec-1-5">第五章 布局XML化</a></li>
-</ul>
-</li>
+<li><a href="#sec-1">2.2.1 SkCanvas概念</a></li>
+<li><a href="#sec-2">2.2.2 SkCanvas基础</a></li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">目录</h2>
+<h2 id="sec-1">2.2.1 SkCanvas概念</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">第一章 初识窗口</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html">1.1 第一个windows窗口程序</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html"> 1.1.1 Hello Windows</a>
-</li>
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html#sec-2"> 1.1.2 窗口程序的基本结构</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html">1.2 thunk技术</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-1">1.2.1 thunk技术起源</a>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-2">1.2.2 thunk技术的典型应用</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html">1.3 窗口的ATL封装</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-1">1.3.1 ATL::CWindow</a>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-2">1.3.2 ATL::CWindowImpl</a>
-</li>
-</ul>
-</li>
-</ul>
+<p>
+上一节我们提到，SkBitmap可以像一张画布一样，作为图像绘制的承载。这张画布的所有操作都需要SkCanvas来完成。SkCanvas提供了一个构造函数，可以直接从SkBitmap构造。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">explicit SkCanvas(const SkBitmap&amp; bitmap);
+</pre>
+</div>
+<p>
+通过上面构造出来SkCanvas对象后，所有对于SkCanvas对象的操作都作用在SkBitmap这张画布上。
+</p>
+
+<p>
+对于我们的界面引擎来说，SkCanvas和SkBitmap是最重要的对象，SkCanvas负责将各种界面元素绘制到SkBitmap上，最后再将SkBitmap展示出来。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled) {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(&amp;ps);
+
+        SkBitmap bitmap;
+        bitmap.allocN32Pixels(760, 200);
+
+        SkCanvas canvas(bitmap);
+
+        // Draw with canvas
+
+        BITMAPINFO bmi;
+        memset(&amp;bmi, 0, sizeof(bmi));
+        bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
+        bmi.bmiHeader.biWidth       = bitmap.width();
+        bmi.bmiHeader.biHeight      = -bitmap.height();
+        bmi.bmiHeader.biPlanes      = 1;
+        bmi.bmiHeader.biBitCount    = 32;
+        bmi.bmiHeader.biCompression = BI_RGB;
+        bmi.bmiHeader.biSizeImage   = 0;
+
+        bitmap.lockPixels();
+        int ret = SetDIBitsToDevice(hdc,
+                                    60, 30,
+                                    bitmap.width(), bitmap.height(),
+                                    0, 0,
+                                    0, bitmap.height(),
+                                    bitmap.getPixels(),
+                                    &amp;bmi,
+                                    DIB_RGB_COLORS);
+        (void)ret; // we're ignoring potential failures for now.
+        bitmap.unlockPixels();
+
+        EndPaint(&amp;ps);
+
+        bHandled = TRUE;
+        return 0;
+    }
+</pre>
+</div>
+<p>
+上面的代码，先创建了一个760*200的SkBitmap，这个bitmap是一张只带有宽度和高度信息的空画布。然后从bitmap构造一个SkCanvas canvas，接着就可以在这个canvas上进行各种绘图操作。
+</p>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">第二章 图形引擎</h3>
-<div class="outline-text-3" id="text-1-2">
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section01-SkBitmap.html">2.1 SkBitmap</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html">2.2 SkCanvas</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-1">2.2.1 SkCanvas概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-2">2.2.2 SkCanvas基础</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter02-图形引擎__section03-文字.html">2.1 文字</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html">2.4 SkPaint</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-1">2.4.1 SkPaint概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-2">2.4.2 SkPaint基础</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">2.2.2 SkCanvas基础</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+设置背景为浅灰
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">canvas-&gt;drawColor(SK_ColorLTGRAY);
+</pre>
 </div>
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">第三章 基础控件</h3>
+
+<p>
+绘制矩形
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">SkPaint paint;
+paint.setStyle(SkPaint::kFill_Style);
+paint.setStrokeWidth(4);
+paint.setColor(0xffFE938C);
+
+SkRect rect = SkRect::MakeXYWH(10, 10, 100, 160);
+canvas-&gt;drawRect(rect, paint);
+</pre>
 </div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">第四章 高级控件</h3>
+<p>
+绘制圆
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">paint.setColor(0xff9CAFB7);
+canvas-&gt;drawCircle(280, 50, 25, paint);
+</pre>
 </div>
 
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5">第五章 布局XML化</h3>
+<p>
+绘制圆角矩形
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">paint.setColor(0xff4281A4);
+canvas-&gt;drawRoundRect(rect, 10, 10, paint);
+</pre>
+</div>
+
+<p>
+旋转
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">canvas-&gt;rotate(60);
+rect = SkRect::MakeXYWH(0, 60, 90, 150);
+paint.setColor(0xff4281A4);
+canvas-&gt;drawRect(rect, paint);
+
+canvas-&gt;rotate(SkIntToScalar(20));
+paint.setColor(0xffFE938C);
+canvas-&gt;drawRect(rect, paint);
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/02-SkCanvas.png" alt="02-SkCanvas.png" />
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-07-31 ���� 23:21</p>
+<p class="date">Created: 2016-07-31 ���� 23:07</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

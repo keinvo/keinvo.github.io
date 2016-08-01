@@ -1,0 +1,99 @@
+#+OPTIONS: ^:nil
+
+#+TITLE: 2.2 SkCanvas
+
+** 2.2.1 SkCanvas概念
+
+上一节我们提到，SkBitmap可以像一张画布一样，作为图像绘制的承载。这张画布的所有操作都需要SkCanvas来完成。SkCanvas提供了一个构造函数，可以直接从SkBitmap构造。
+#+BEGIN_SRC C++
+explicit SkCanvas(const SkBitmap& bitmap);
+#+END_SRC
+通过上面构造出来SkCanvas对象后，所有对于SkCanvas对象的操作都作用在SkBitmap这张画布上。
+
+对于我们的界面引擎来说，SkCanvas和SkBitmap是最重要的对象，SkCanvas负责将各种界面元素绘制到SkBitmap上，最后再将SkBitmap展示出来。
+#+BEGIN_SRC C++
+LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled) {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(&ps);
+
+        SkBitmap bitmap;
+        bitmap.allocN32Pixels(760, 200);
+
+        SkCanvas canvas(bitmap);
+
+		// Draw with canvas
+
+		BITMAPINFO bmi;
+        memset(&bmi, 0, sizeof(bmi));
+        bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
+        bmi.bmiHeader.biWidth       = bitmap.width();
+        bmi.bmiHeader.biHeight      = -bitmap.height();
+        bmi.bmiHeader.biPlanes      = 1;
+        bmi.bmiHeader.biBitCount    = 32;
+        bmi.bmiHeader.biCompression = BI_RGB;
+        bmi.bmiHeader.biSizeImage   = 0;
+
+        bitmap.lockPixels();
+        int ret = SetDIBitsToDevice(hdc,
+                                    60, 30,
+                                    bitmap.width(), bitmap.height(),
+                                    0, 0,
+                                    0, bitmap.height(),
+                                    bitmap.getPixels(),
+                                    &bmi,
+                                    DIB_RGB_COLORS);
+        (void)ret; // we're ignoring potential failures for now.
+        bitmap.unlockPixels();
+
+        EndPaint(&ps);
+
+        bHandled = TRUE;
+        return 0;
+    }
+
+#+END_SRC
+上面的代码，先创建了一个760*200的SkBitmap，这个bitmap是一张只带有宽度和高度信息的空画布。然后从bitmap构造一个SkCanvas canvas，接着就可以在这个canvas上进行各种绘图操作。
+
+** 2.2.2 SkCanvas基础
+设置背景为浅灰
+#+BEGIN_SRC C++
+canvas->drawColor(SK_ColorLTGRAY);
+#+END_SRC
+
+
+绘制矩形
+#+BEGIN_SRC C++
+SkPaint paint;
+paint.setStyle(SkPaint::kFill_Style);
+paint.setStrokeWidth(4);
+paint.setColor(0xffFE938C);
+
+SkRect rect = SkRect::MakeXYWH(10, 10, 100, 160);
+canvas->drawRect(rect, paint);
+#+END_SRC
+
+绘制圆
+#+BEGIN_SRC C++
+paint.setColor(0xff9CAFB7);
+canvas->drawCircle(280, 50, 25, paint);
+#+END_SRC
+
+绘制圆角矩形
+#+BEGIN_SRC C++
+paint.setColor(0xff4281A4);
+canvas->drawRoundRect(rect, 10, 10, paint);
+#+END_SRC
+
+旋转
+#+BEGIN_SRC C++
+canvas->rotate(60);
+rect = SkRect::MakeXYWH(0, 60, 90, 150);
+paint.setColor(0xff4281A4);
+canvas->drawRect(rect, paint);
+
+canvas->rotate(SkIntToScalar(20));
+paint.setColor(0xffFE938C);
+canvas->drawRect(rect, paint);
+#+END_SRC
+
+[[file:./img/02-SkCanvas.png]]

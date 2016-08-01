@@ -1,4 +1,8 @@
-template <class T>  
+#pragma once
+
+#include <memory>
+
+template <class T>
 class CSingleton  
 {  
 public:  
@@ -10,15 +14,15 @@ private:
        CSingleton(const CSingleton&){}   
        CSingleton & operator= (const CSingleton &){}   
   
-       static auto_ptr<T> _instance;  
-       static CQuickLock _rs;   
+       static std::auto_ptr<T> _instance;
+       // static CQuickLock _rs;
 };  
   
 template <class T>  
-auto_ptr<T> CSingleton<T>::_instance;  
+std::auto_ptr<T> CSingleton<T>::_instance;
   
-template <class T>  
-CQuickLock CSingleton<T>::_rs;   
+// template <class T>
+// CQuickLock CSingleton<T>::_rs;
 
 template <class T>  
 inline T* CSingleton<T>::Instance()  

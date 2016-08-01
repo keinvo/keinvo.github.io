@@ -1,0 +1,54 @@
+#+OPTIONS: ^:nil
+
+#+TITLE: 2.4 SkPaint
+
+** 2.4.1 SkPaint概念
+SkPaint指定了绘制的样式、颜色、变换信息。
+
+** 2.4.2 SkPaint基础
+
+渐变
+#+BEGIN_SRC C++
+SkRect rect = SkRect::MakeXYWH(10, 10, 360, 180);
+
+SkPoint points[2] = {
+	SkPoint::Make(0.0f, 0.0f),
+    SkPoint::Make(0.0f, 256.0f)
+    };
+SkColor colors[2] = {SK_ColorBLUE, SK_ColorYELLOW};
+SkPaint paint1;
+paint1.setShader(SkGradientShader::MakeLinear(
+	points, colors, nullptr, 2,
+    SkShader::kClamp_TileMode, 0, nullptr));
+canvas->drawRect(rect, paint1);
+#+END_SRC
+
+[[file:./img/02-SkPaint-gradient.png]]
+
+
+模糊
+#+BEGIN_SRC C++
+SkPaint paint4;
+paint4.setAntiAlias(true);
+paint4.setTextSize(120);
+paint4.setMaskFilter(SkBlurMaskFilter::Make(
+	kNormal_SkBlurStyle, 5.0f, 0));
+const char text[] = "Skia";
+canvas->drawText(text, strlen(text), 240, 340, paint4);
+#+END_SRC
+
+[[file:./img/02-SkPaint-mask.png]]
+
+浮雕
+#+BEGIN_SRC C++
+SkPaint paint5;
+paint5.setAntiAlias(true);
+paint5.setTextSize(120);
+SkScalar direction[3] = {1.0f, 1.0f, 1.0f};
+paint5.setMaskFilter(SkBlurMaskFilter::MakeEmboss(
+	2.0f, direction, 0.3f, 0.1f));
+
+canvas->drawText(text, strlen(text), 520, 340, paint5);
+#+END_SRC
+
+[[file:./img/02-SkPaint-emboss.png]]

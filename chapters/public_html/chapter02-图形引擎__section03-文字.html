@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>UI引擎设计</title>
-<!-- 2016-07-31 ���� 23:21 -->
+<title>2.3 文字</title>
+<!-- 2016-07-31 ���� 23:07 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -141,102 +141,49 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
-<h1 class="title">UI引擎设计</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">目录</a>
-<ul>
-<li><a href="#sec-1-1">第一章 初识窗口</a></li>
-<li><a href="#sec-1-2">第二章 图形引擎</a></li>
-<li><a href="#sec-1-3">第三章 基础控件</a></li>
-<li><a href="#sec-1-4">第四章 高级控件</a></li>
-<li><a href="#sec-1-5">第五章 布局XML化</a></li>
-</ul>
-</li>
-</ul>
-</div>
+<h1 class="title">2.3 文字</h1>
+<p>
+SkCanvas提供了drawText函数用来绘制文字，之所以单独作一节是因为打算后续补充字体等文字相关的内容。仅仅绘制文字是比较简单的。
+</p>
+<div class="org-src-container">
+
+<pre class="src src-C++">void Draw(SkCanvas* canvas) {
+        canvas-&gt;clear(SK_ColorWHITE);
+
+        SkPaint paint1, paint2, paint3;
+
+        paint1.setTextSize(64.0f);
+        paint1.setAntiAlias(true);
+        paint1.setColor(0xff4281A4);
+        paint1.setStyle(SkPaint::kFill_Style);
+
+        paint2.setTextSize(64.f);
+        paint2.setAntiAlias(true);
+        paint2.setColor(0xff9CAFB7);
+        paint2.setStyle(SkPaint::kStroke_Style);
+        paint2.setStrokeWidth(SkIntToScalar(3));
+
+        paint3.setTextSize(64.0f);
+        paint3.setAntiAlias(true);
+        paint3.setColor(0xffE6B89C);
+        paint3.setTextScaleX(SkFloatToScalar(1.5f));
+
+        const char text[] = "Skia";
+        canvas-&gt;drawText(text, strlen(text), 20.0f, 64.0f,  paint1);
+        canvas-&gt;drawText(text, strlen(text), 20.0f, 144.0f, paint2);
+        canvas-&gt;drawText(text, strlen(text), 20.0f, 224.0f, paint3);
+    }
+</pre>
 </div>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">目录</h2>
-<div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">第一章 初识窗口</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html">1.1 第一个windows窗口程序</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html"> 1.1.1 Hello Windows</a>
-</li>
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html#sec-2"> 1.1.2 窗口程序的基本结构</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html">1.2 thunk技术</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-1">1.2.1 thunk技术起源</a>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-2">1.2.2 thunk技术的典型应用</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html">1.3 窗口的ATL封装</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-1">1.3.1 ATL::CWindow</a>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-2">1.3.2 ATL::CWindowImpl</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">第二章 图形引擎</h3>
-<div class="outline-text-3" id="text-1-2">
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section01-SkBitmap.html">2.1 SkBitmap</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html">2.2 SkCanvas</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-1">2.2.1 SkCanvas概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-2">2.2.2 SkCanvas基础</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter02-图形引擎__section03-文字.html">2.1 文字</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html">2.4 SkPaint</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-1">2.4.1 SkPaint概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-2">2.4.2 SkPaint基础</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">第三章 基础控件</h3>
-</div>
-
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">第四章 高级控件</h3>
-</div>
-
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5">第五章 布局XML化</h3>
-</div>
+<div class="figure">
+<p><img src="./img/02-text.png" alt="02-text.png" />
+</p>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-07-31 ���� 23:21</p>
+<p class="date">Created: 2016-07-31 ���� 23:07</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

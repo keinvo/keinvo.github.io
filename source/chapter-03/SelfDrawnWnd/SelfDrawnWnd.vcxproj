@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F08D388E-C3EE-3625-B49C-0A25139F8ABF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SelfDrawnWnd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SelfDrawnWnd.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SelfDrawnWnd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SelfDrawnWnd.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SelfDrawnWnd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SelfDrawnWnd.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SelfDrawnWnd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SelfDrawnWnd.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SelfDrawnWnd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\bin\Debug\skia.lib;usp10.lib;opengl32.lib;..\..\bin\Debug\png.lib;..\..\bin\Debug\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/uiengine/source/bin/Debug/SelfDrawnWnd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/Debug/SelfDrawnWnd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\bin\Release\skia.lib;usp10.lib;opengl32.lib;..\..\bin\Release\png.lib;..\..\bin\Release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/uiengine/source/bin/Release/SelfDrawnWnd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/Release/SelfDrawnWnd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\bin\MinSizeRel\skia.lib;usp10.lib;opengl32.lib;..\..\bin\MinSizeRel\png.lib;..\..\bin\MinSizeRel\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/uiengine/source/bin/MinSizeRel/SelfDrawnWnd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/MinSizeRel/SelfDrawnWnd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\uiengine\source\third_party;D:\workspace\uiengine\source\third_party\skia\tools;D:\workspace\uiengine\source\third_party\skia\tools\flags;D:\workspace\uiengine\source\third_party\skia\include;D:\workspace\uiengine\source\third_party\skia\include\config;D:\workspace\uiengine\source\third_party\skia\include\android;D:\workspace\uiengine\source\third_party\skia\include\c;D:\workspace\uiengine\source\third_party\skia\include\codec;D:\workspace\uiengine\source\third_party\skia\include\core;D:\workspace\uiengine\source\third_party\skia\include\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\effects;D:\workspace\uiengine\source\third_party\skia\include\gpu\gl;D:\workspace\uiengine\source\third_party\skia\include\gpu;D:\workspace\uiengine\source\third_party\skia\include\images;D:\workspace\uiengine\source\third_party\skia\include\pathops;D:\workspace\uiengine\source\third_party\skia\include\ports;D:\workspace\uiengine\source\third_party\skia\include\utils\mac;D:\workspace\uiengine\source\third_party\skia\include\utils;D:\workspace\uiengine\source\third_party\skia\include\utils\win;D:\workspace\uiengine\source\third_party\skia\include\views;D:\workspace\uiengine\source\third_party\skia\include\xml;D:\workspace\uiengine\source\third_party\skia\include\private;D:\workspace\uiengine\source\third_party\skia\src\android;D:\workspace\uiengine\source\third_party\skia\src\animator;D:\workspace\uiengine\source\third_party\skia\src\c;D:\workspace\uiengine\source\third_party\skia\src\codec;D:\workspace\uiengine\source\third_party\skia\src\core;D:\workspace\uiengine\source\third_party\skia\src\effects\gradients;D:\workspace\uiengine\source\third_party\skia\src\effects;D:\workspace\uiengine\source\third_party\skia\src\fonts;D:\workspace\uiengine\source\third_party\skia\src\gpu\batches;D:\workspace\uiengine\source\third_party\skia\src\gpu\effects;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl;D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mesa;D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl;D:\workspace\uiengine\source\third_party\skia\src\gpu;D:\workspace\uiengine\source\third_party\skia\src\gpu\text;D:\workspace\uiengine\source\third_party\skia\src\gpu\vk;D:\workspace\uiengine\source\third_party\skia\src\image;D:\workspace\uiengine\source\third_party\skia\src\images;D:\workspace\uiengine\source\third_party\skia\src\lazy;D:\workspace\uiengine\source\third_party\skia\src\opts;D:\workspace\uiengine\source\third_party\skia\src\pathops;D:\workspace\uiengine\source\third_party\skia\src\pdf;D:\workspace\uiengine\source\third_party\skia\src\ports;D:\workspace\uiengine\source\third_party\skia\src\sfnt;D:\workspace\uiengine\source\third_party\skia\src\svg\parser;D:\workspace\uiengine\source\third_party\skia\src\svg;D:\workspace\uiengine\source\third_party\skia\src\utils;D:\workspace\uiengine\source\third_party\skia\src\utils\win;D:\workspace\uiengine\source\third_party\skia\src\views\mac;D:\workspace\uiengine\source\third_party\skia\src\views;D:\workspace\uiengine\source\third_party\skia\src\views\unix;D:\workspace\uiengine\source\third_party\skia\src\xps;D:\workspace\uiengine\source\third_party\skia\common\etc1;D:\workspace\uiengine\source\third_party\skia\common\ktx;D:\workspace\uiengine\source\nuuk\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\bin\RelWithDebInfo\skia.lib;usp10.lib;opengl32.lib;..\..\bin\RelWithDebInfo\png.lib;..\..\bin\RelWithDebInfo\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace/uiengine/source/bin/RelWithDebInfo/SelfDrawnWnd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/RelWithDebInfo/SelfDrawnWnd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\stdafx.h" />
+    <ClInclude Include="D:\workspace\uiengine\source\third_party\skia\tools\Resources.h" />
+    <ClInclude Include="D:\workspace\uiengine\source\third_party\skia\tools\flags\SkCommandLineFlags.h" />
+    <ClCompile Include="D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\stdafx.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\chapter-03\SelfDrawnWnd\SelfDrawnWnd.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\tools\Resources.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\tools\flags\SkCommandLineFlags.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\nuuk\core\UICanvas.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\nuuk\core\UIView.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine\source\nuuk\core\UIWindow.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace/uiengine/source/ZERO_CHECK.vcxproj">
+      <Project>DA8AB4BA-C0D3-32DF-8E8A-9005C1B0DAD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/third_party/libpng/png.vcxproj">
+      <Project>E2DBB048-10C9-3163-8809-20B0625E6DAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/third_party/skia/skia.vcxproj">
+      <Project>5CB00ED4-33E8-3942-9C10-1F352AD2A2D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/third_party/zlib/zlib.vcxproj">
+      <Project>13E468D7-E6E5-3639-AC83-8380C9417A26</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

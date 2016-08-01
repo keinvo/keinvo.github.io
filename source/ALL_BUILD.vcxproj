@@ -180,14 +180,26 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:/workspace/uiengine/source/chapter-01/HelloWinDlg/HelloWinDlg.vcxproj">
       <Project>25FB3EF7-F28F-3CC6-9908-5C3D1CCC1081</Project>
     </ProjectReference>
-    <ProjectReference Include="D:/workspace/uiengine/source/chapter-02/SelfDrawnWnd/SelfDrawnWnd.vcxproj">
+    <ProjectReference Include="D:/workspace/uiengine/source/chapter-03/SelfDrawnWnd/SelfDrawnWnd.vcxproj">
       <Project>F08D388E-C3EE-3625-B49C-0A25139F8ABF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/chapter-02/SkBitmapDemo/SkBitmapDemo.vcxproj">
+      <Project>32F97B4A-066F-3654-8E50-49B4B764DD0E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/chapter-02/SkCanvasDemo/SkCanvasDemo.vcxproj">
+      <Project>3B1ECDCF-F264-3FED-A77B-134620D1190B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/chapter-02/SkPaintDemo/SkPaintDemo.vcxproj">
+      <Project>A7826D62-CCDC-3CBA-AF27-BC5E903D1D53</Project>
     </ProjectReference>
     <ProjectReference Include="D:/workspace/uiengine/source/chapter-01/StopWatch/StopWatch.vcxproj">
       <Project>76C913F0-F0F7-3E96-B395-EBB6484B184F</Project>
     </ProjectReference>
     <ProjectReference Include="D:/workspace/uiengine/source/chapter-01/StopWatchUseThunk/StopWatchUseThunk.vcxproj">
       <Project>8403BAA1-A990-3943-ABCF-04EA35FD52D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace/uiengine/source/chapter-02/TextDemo/TextDemo.vcxproj">
+      <Project>0F763BF3-3877-3E7F-B412-E8922956CDA2</Project>
     </ProjectReference>
     <ProjectReference Include="D:/workspace/uiengine/source/third_party/libpng/png.vcxproj">
       <Project>E2DBB048-10C9-3163-8809-20B0625E6DAE</Project>

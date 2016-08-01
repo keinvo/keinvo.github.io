@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>UI引擎设计</title>
-<!-- 2016-07-31 ���� 23:21 -->
+<title>2.1 SkBitmap</title>
+<!-- 2016-07-31 ���� 22:39 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -141,102 +141,65 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
-<h1 class="title">UI引擎设计</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">目录</a>
-<ul>
-<li><a href="#sec-1-1">第一章 初识窗口</a></li>
-<li><a href="#sec-1-2">第二章 图形引擎</a></li>
-<li><a href="#sec-1-3">第三章 基础控件</a></li>
-<li><a href="#sec-1-4">第四章 高级控件</a></li>
-<li><a href="#sec-1-5">第五章 布局XML化</a></li>
-</ul>
+<h1 class="title">2.1 SkBitmap</h1>
+<p>
+SkBitmap用来指定一个光栅位图(raster bitmap)，这个位图包含宽度和高度信息，另外有一个指针指向像素数据。SkBitmap有两种用法：
+</p>
+<ul class="org-ul">
+<li>作为普通的绘制对象。这种情况下一个SkBitmap对象就是一张图片，和文字一样，只是一个绘制对象。
+</li>
+<li>作为图像绘制的承载。这种情况下，一个SkBitmap仍然可以理解成一张图片，不过这是一张类似于画布的图片，所有的绘制操作都作用在这个图片上。
 </li>
 </ul>
-</div>
-</div>
+<p>
+本节我们介绍前面一种，用来展示本地图片到界面。
+</p>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">目录</h2>
-<div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">第一章 初识窗口</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html">1.1 第一个windows窗口程序</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html"> 1.1.1 Hello Windows</a>
-</li>
-<li><a href="chapter01-初识窗口__section01-第一个窗口程序.html#sec-2"> 1.1.2 窗口程序的基本结构</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html">1.2 thunk技术</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-1">1.2.1 thunk技术起源</a>
-</li>
-<li><a href="chapter01-初识窗口__section02-thunk技术.html#sec-2">1.2.2 thunk技术的典型应用</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html">1.3 窗口的ATL封装</a>
-<ul class="org-ul">
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-1">1.3.1 ATL::CWindow</a>
-</li>
-<li><a href="chapter01-初识窗口__section03-窗口的ATL封装.html#sec-2">1.3.2 ATL::CWindowImpl</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<p>
+SkBitmap作为绘制对象时，因为内部有指向像素数据的指针(bitmap.getPixels())，所以很容易就能展示在界面上。
+</p>
+<div class="org-src-container">
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">第二章 图形引擎</h3>
-<div class="outline-text-3" id="text-1-2">
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section01-SkBitmap.html">2.1 SkBitmap</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html">2.2 SkCanvas</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-1">2.2.1 SkCanvas概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section02-SkCanvas.html#sec-2">2.2.2 SkCanvas基础</a>
-</li>
-</ul>
-</li>
-<li><a href="chapter02-图形引擎__section03-文字.html">2.1 文字</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html">2.4 SkPaint</a>
-<ul class="org-ul">
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-1">2.4.1 SkPaint概念</a>
-</li>
-<li><a href="chapter02-图形引擎__section04-SkPaint.html#sec-2">2.4.2 SkPaint基础</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<pre class="src src-C++">LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled) {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(&amp;ps);
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">第三章 基础控件</h3>
-</div>
+        SkBitmap bitmap;
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">第四章 高级控件</h3>
-</div>
+        GetResourceAsBitmap("skia.png", &amp;bitmap);
 
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5">第五章 布局XML化</h3>
-</div>
+        BITMAPINFO bmi;
+        memset(&amp;bmi, 0, sizeof(bmi));
+        bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
+        bmi.bmiHeader.biWidth       = bitmap.width();
+        bmi.bmiHeader.biHeight      = -bitmap.height();
+        bmi.bmiHeader.biPlanes      = 1;
+        bmi.bmiHeader.biBitCount    = 32;
+        bmi.bmiHeader.biCompression = BI_RGB;
+        bmi.bmiHeader.biSizeImage   = 0;
+
+        bitmap.lockPixels();
+        int ret = SetDIBitsToDevice(hdc,
+                                    40, 30,
+                                    bitmap.width(), bitmap.height(),
+                                    0, 0,
+                                    0, bitmap.height(),
+                                    bitmap.getPixels(),
+                                    &amp;bmi,
+                                    DIB_RGB_COLORS);
+        (void)ret; // we're ignoring potential failures for now.
+        bitmap.unlockPixels();
+
+        EndPaint(&amp;ps);
+
+        bHandled = TRUE;
+        return 0;
+    }
+</pre>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-07-31 ���� 23:21</p>
+<p class="date">Created: 2016-07-31 ���� 22:39</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

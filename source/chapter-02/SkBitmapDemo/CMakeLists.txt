@@ -1,4 +1,6 @@
-set(PROJNAME SelfDrawnWnd)
+cmake_minimum_required (VERSION 3.1)
+
+set(PROJNAME SkBitmapDemo)
 set(CHAPTER "chapter-02")
 
 include_directories(${PROJECT_SOURCE_DIR}/third_party)
@@ -65,20 +67,14 @@ include_directories(${PROJECT_SOURCE_DIR}/third_party/skia/include/private)
 include_directories(${PROJECT_SOURCE_DIR}/third_party/skia/common/etc1)
 include_directories(${PROJECT_SOURCE_DIR}/third_party/skia/common/ktx)
 
-include_directories(${PROJECT_SOURCE_DIR}/nuuk)
-
-
 file (GLOB FILE_SOURCE
   "stdafx.h",
   "stdafx.cpp",
-  "SelfDrawnWnd.cpp",
+  "SkBitmapDemo.cpp",
   "../../third_party/skia/tools/Resources.h"
   "../../third_party/skia/tools/Resources.cpp"
   "../../third_party/skia/tools/flags/SkCommandLineFlags.h"
-  "../../third_party/skia/tools/flags/SkCommandLineFlags.cpp"
-  "../../nuuk/NkWindow.h"
-  "../../nuuk/NkWindow.cpp")
-
+  "../../third_party/skia/tools/flags/SkCommandLineFlags.cpp")
 
 source_group("source" FILES ${FILE_SOURCE})
 

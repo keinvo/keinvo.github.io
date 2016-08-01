@@ -1,5 +1,5 @@
 (defconst slnfile "D:/workspace/uiengine/source/uiengine.sln")
-(defconst projfile "D:/workspace/uiengine/source/chapter-02/SelfDrawnWnd/SelfDrawnWnd.vcxproj")
+(defconst projfile "D:/workspace/uiengine/source/chapter-02/SkCanvasDemo/SkCanvasDemo.vcxproj")
 
 (msvc-activate-projects-after-parse :solution-file slnfile
                                     :project-file projfile

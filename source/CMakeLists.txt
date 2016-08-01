@@ -10,13 +10,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
 add_subdirectory(third_party)
 
-add_subdirectory(chapter-01/HelloWin)
-add_subdirectory(chapter-01/HelloWinDlg)
+add_subdirectory(chapter-01)
 
-add_subdirectory(chapter-01/HelloCWindow)
-add_subdirectory(chapter-01/HelloCwindowImpl)
-add_subdirectory(chapter-01/HelloCwindowImpl2)
-add_subdirectory(chapter-01/StopWatch)
-add_subdirectory(chapter-01/StopWatchUseThunk)
+add_subdirectory(chapter-02)
 
-add_subdirectory(chapter-02/SelfDrawnWnd)
+add_subdirectory(chapter-03)
