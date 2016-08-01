@@ -18,7 +18,7 @@
   - [[file:chapter02-图形引擎__section02-SkCanvas.org][2.2 SkCanvas]]
     - [[file:chapter02-图形引擎__section02-SkCanvas.org::*2.2.1 SkCanvas概念][2.2.1 SkCanvas概念]]
     - [[file:chapter02-图形引擎__section02-SkCanvas.org::*2.2.2 SkCanvas基础][2.2.2 SkCanvas基础]]
-  - [[file:chapter02-图形引擎__section03-文字.org][2.1 文字]]
+  - [[file:chapter02-图形引擎__section03-文字.org][2.3 文字]]
   - [[file:chapter02-图形引擎__section04-SkPaint.org][2.4 SkPaint]]
     - [[file:chapter02-图形引擎__section04-SkPaint.org::*2.4.1 SkPaint概念][2.4.1 SkPaint概念]]
     - [[file:chapter02-图形引擎__section04-SkPaint.org::*2.4.2 SkPaint基础][2.4.2 SkPaint基础]]
