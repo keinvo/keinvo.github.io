@@ -1,1759 +1,1759 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\android\SkBitmapRegionCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\android\SkBitmapRegionCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\android\SkBitmapRegionDecoder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\android\SkBitmapRegionDecoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\c\sk_paint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\c\sk_paint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\c\sk_surface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\c\sk_surface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkAndroidCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkAndroidCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkBmpCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpMaskCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkBmpMaskCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpRLECodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkBmpRLECodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkBmpStandardCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkBmpStandardCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkCodecImageGenerator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkCodecImageGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkMasks.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkMasks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkMaskSwizzler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkMaskSwizzler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSampledCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkSampledCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSampler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkSampler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkSwizzler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkSwizzler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkWbmpCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkWbmpCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\codec\SkPngCodec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\codec\SkPngCodec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAAClip.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkAAClip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAdvancedTypefaceMetrics.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkAdvancedTypefaceMetrics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAlphaRuns.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkAlphaRuns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAnnotation.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkAnnotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkAutoPixmapStorage.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkAutoPixmapStorage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBBHFactory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBBHFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBigPicture.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBigPicture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmap.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapController.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapDevice.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapProcShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcState.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapProcState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProcState_matrixProcs.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapProcState_matrixProcs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapProvider.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBitmapScaler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBitmapScaler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitMask_D32.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitMask_D32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitRow_D16.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitRow_D16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitRow_D32.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitRow_D32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_A8.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter_A8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_ARGB32.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter_ARGB32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_PM4f.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter_PM4f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_RGB16.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter_RGB16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBlitter_Sprite.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBlitter_Sprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCachedData.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkCachedData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCanvas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkChecksum.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkChecksum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkChunkAlloc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkChunkAlloc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkClipStack.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkClipStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorFilterShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorFilterShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorMatrixFilterRowMajor255.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorMatrixFilterRowMajor255.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorSpace.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorSpace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkColorTable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkColorTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkComposeShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkComposeShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkConfig8888.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkConfig8888.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkConvolver.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkConvolver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkCpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkCubicClipper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkCubicClipper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkData.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDataTable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDataTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDebug.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDebug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeque.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDeque.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDevice.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeviceLooper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDeviceLooper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDeviceProfile.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDeviceProfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDistanceFieldGen.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDistanceFieldGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDither.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDither.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDocument.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDocument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDraw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDrawable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDrawable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkDrawLooper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkDrawLooper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdge.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkEdge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdgeBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkEdgeBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkEdgeClipper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkEdgeClipper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkError.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFilterProc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFilterProc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFlattenable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFlattenable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFlattenableSerialization.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFlattenableSerialization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFloatBits.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFloatBits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFont.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFont.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontDescriptor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFontDescriptor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontLCDConfig.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFontLCDConfig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontMgr.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFontMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontStream.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFontStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkFontStyle.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkFontStyle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGeometry.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkGeometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGlobalInitialization_core.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkGlobalInitialization_core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGlyphCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkGlyphCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkGraphics.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkGraphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkHalf.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkHalf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageCacherator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkImageCacherator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageFilterCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkImageFilterCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageGenerator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkImageGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkImageInfo.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkImageInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLightingShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkLightingShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLinearBitmapPipeline.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkLinearBitmapPipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLineClipper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkLineClipper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLocalMatrixImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkLocalMatrixImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkLocalMatrixShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkLocalMatrixShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMallocPixelRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMallocPixelRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMask.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMaskCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMaskFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMaskGamma.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMaskGamma.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrix.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrix44.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMatrix44.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMatrixImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMatrixImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMD5.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMD5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMetaData.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMetaData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMiniRecorder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMiniRecorder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMipMap.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMipMap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkModeColorFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkModeColorFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkMultiPictureDraw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkMultiPictureDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkNinePatchIter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkNinePatchIter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkOpts.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkOpts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPaint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPaint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPaintPriv.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPaintPriv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathMeasure.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPathMeasure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPathRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPathRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPicture.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPicture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureAnalyzer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureAnalyzer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureContentInfo.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureContentInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureData.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureFlat.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureFlat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureImageGenerator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureImageGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPicturePlayback.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPicturePlayback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureRecord.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureRecorder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureRecorder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPictureShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPictureShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPixelRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPixelRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPixmap.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPixmap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPoint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPoint3.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPoint3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkPtrRecorder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkPtrRecorder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkQuadClipper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkQuadClipper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRasterClip.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRasterClip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRasterizer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRasterizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkReadBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkReadBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecord.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordDraw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecordDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordedDrawable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecordedDrawable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecorder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecorder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecordOpts.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecordOpts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRecords.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRecords.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRefDict.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRefDict.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRegion.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRegion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRegion_path.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRegion_path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkResourceCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkResourceCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRRect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRTree.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkRWBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkRWBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScalar.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScalar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScalerContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScalerContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Antihair.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScan_Antihair.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_AntiPath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScan_AntiPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Hairline.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScan_Hairline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkScan_Path.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkScan_Path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSemaphore.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSemaphore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSharedMutex.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSharedMutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpanProcs.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpanProcs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpecialImage.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpecialImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpecialSurface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpecialSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpinlock.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpinlock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter4f.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpriteBlitter4f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter_ARGB32.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpriteBlitter_ARGB32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSpriteBlitter_RGB16.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSpriteBlitter_RGB16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStream.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkString.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStringUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkStringUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStroke.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkStroke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStrokeRec.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkStrokeRec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkStrokerPriv.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkStrokerPriv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkSwizzle.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkSwizzle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTaskGroup.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTaskGroup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTextBlob.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTextBlob.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkThreadID.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkThreadID.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTime.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTLS.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTLS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTSearch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTypeface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTypeface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkTypefaceCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkTypefaceCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkUnPreMultiply.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkUnPreMultiply.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkValidatingReadBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkValidatingReadBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkVarAlloc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkVarAlloc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkVertState.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkVertState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkWriteBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkWriteBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkWriter32.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkWriter32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermode.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkXfermode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermode4f.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkXfermode4f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermodeF16.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkXfermodeF16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkXfermodeInterpretation.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkXfermodeInterpretation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\core\SkYUVPlanesCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\core\SkYUVPlanesCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\Sk4fGradientBase.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\Sk4fGradientBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\Sk4fLinearGradient.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\Sk4fLinearGradient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkClampRange.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkClampRange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkGradientBitmapCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkGradientBitmapCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkGradientShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkGradientShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkLinearGradient.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkLinearGradient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkRadialGradient.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkRadialGradient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkSweepGradient.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkSweepGradient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient_gpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\gradients\SkTwoPointConicalGradient_gpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\GrAlphaThresholdFragmentProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\GrAlphaThresholdFragmentProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\GrCircleBlurFragmentProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\GrCircleBlurFragmentProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\Sk1DPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\Sk1DPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\Sk2DPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\Sk2DPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkAlphaThresholdFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkAlphaThresholdFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArcToPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkArcToPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArithmeticMode.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkArithmeticMode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkArithmeticMode_gpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkArithmeticMode_gpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurDrawLooper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkBlurDrawLooper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkBlurImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurMask.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkBlurMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkBlurMaskFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkBlurMaskFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorCubeFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkColorCubeFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorFilterImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkColorFilterImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorMatrix.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkColorMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkColorMatrixFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkColorMatrixFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkComposeImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkComposeImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkCornerPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkCornerPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDashPathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkDashPathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDiscretePathEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkDiscretePathEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDisplacementMapEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkDisplacementMapEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkDropShadowImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkDropShadowImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkEmbossMask.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkEmbossMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkEmbossMaskFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkEmbossMaskFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkGpuBlurUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkGpuBlurUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkImageSource.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkImageSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLayerDrawLooper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkLayerDrawLooper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLayerRasterizer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkLayerRasterizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLightingImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkLightingImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkLumaColorFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkLumaColorFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMagnifierImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkMagnifierImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMatrixConvolutionImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkMatrixConvolutionImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMergeImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkMergeImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkMorphologyImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkMorphologyImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkOffsetImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkOffsetImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPackBits.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkPackBits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPaintFlagsDrawFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkPaintFlagsDrawFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPaintImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkPaintImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPerlinNoiseShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkPerlinNoiseShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkPictureImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkPictureImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTableColorFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkTableColorFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTableMaskFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkTableMaskFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTestImageFilters.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkTestImageFilters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkTileImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkTileImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\effects\SkXfermodeImageFilter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\effects\SkXfermodeImageFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkFontMgr_indirect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\fonts\SkFontMgr_indirect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkGScalerContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\fonts\SkGScalerContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkRandomScalerContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\fonts\SkRandomScalerContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkRemotableFontMgr.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\fonts\SkRemotableFontMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\fonts\SkTestScalerContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\fonts\SkTestScalerContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAConvexPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAAConvexPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAConvexTessellator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAAConvexTessellator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAADistanceFieldPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAADistanceFieldPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAFillRectBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAAFillRectBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAHairLinePathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAAHairLinePathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAALinearizingConvexPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAALinearizingConvexPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAAStrokeRectBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAAStrokeRectBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrAtlasTextBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrAtlasTextBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrCopySurfaceBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrCopySurfaceBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDashLinePathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDashLinePathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDefaultPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDefaultPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawAtlasBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDrawAtlasBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDrawBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawPathBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDrawPathBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrDrawVerticesBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrDrawVerticesBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrMSAAPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrMSAAPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNinePatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrNinePatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNonAAFillRectBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrNonAAFillRectBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrNonAAStrokeRectBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrNonAAStrokeRectBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrPLSPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrPLSPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrRectBatchFactory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrRectBatchFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrStencilAndCoverPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrStencilAndCoverPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrTessellatingPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrTessellatingPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\batches\GrVertexBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\batches\GrVertexBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBezierEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrBezierEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBicubicEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrBicubicEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrBitmapTextGeoProc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrBitmapTextGeoProc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConfigConversionEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrConfigConversionEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConstColorProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrConstColorProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConvexPolyEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrConvexPolyEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrConvolutionEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrConvolutionEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrCoverageSetOpXP.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrCoverageSetOpXP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrCustomXfermode.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrCustomXfermode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDashingEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrDashingEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDisableColorXP.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrDisableColorXP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDistanceFieldGeoProc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrDistanceFieldGeoProc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrDitherEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrDitherEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrGammaEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrGammaEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrMatrixConvolutionEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrMatrixConvolutionEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrOvalEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrOvalEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrPorterDuffXferProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrPorterDuffXferProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrRRectEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrRRectEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrSimpleTextureEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrSimpleTextureEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrSingleTextureEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrSingleTextureEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrTextureDomain.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrTextureDomain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrTextureStripAtlas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrTextureStripAtlas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrXfermodeFragmentProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrXfermodeFragmentProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\effects\GrYUVEffect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\effects\GrYUVEffect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\android\GrGLCreateNativeInterface_android.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\android\GrGLCreateNativeInterface_android.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLProgramBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\builders\GrGLProgramBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLShaderStringBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\builders\GrGLShaderStringBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\builders\GrGLSLPrettyPrint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\builders\GrGLSLPrettyPrint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLAssembleInterface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLAssembleInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLBuffer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLCaps.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLCaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLCreateNullInterface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLCreateNullInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLDefaultInterface_native.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLDefaultInterface_native.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLExtensions.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLExtensions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGLSL.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLGLSL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLGpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLGpuProgramCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLGpuProgramCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLInterface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPathRange.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLPathRange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLPathRendering.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLPathRendering.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgram.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgramDataManager.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLProgramDataManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLProgramDesc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLProgramDesc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLRenderTarget.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLRenderTarget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLStencilAttachment.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLStencilAttachment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTestInterface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLTestInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTexture.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLTextureRenderTarget.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLTextureRenderTarget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLUniformHandler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLUniformHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLUtil.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLVaryingHandler.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLVaryingHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\GrGLVertexArray.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\GrGLVertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\mac\GrGLCreateNativeInterface_mac.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\mac\GrGLCreateNativeInterface_mac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\gl\win\GrGLCreateNativeInterface_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\gl\win\GrGLCreateNativeInterface_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSL.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLBlend.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLBlend.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLCaps.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLCaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentShaderBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLFragmentShaderBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryShaderBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLGeometryShaderBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLPrimitiveProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLPrimitiveProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLProgramBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLProgramBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLProgramDataManager.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLProgramDataManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLShaderBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLShaderBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLUtil.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLVarying.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLVarying.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLVertexShaderBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLVertexShaderBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\glsl\GrGLSLXferProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\glsl\GrGLSLXferProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrAuditTrail.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrAuditTrail.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchAtlas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBatchAtlas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchFlushState.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBatchFlushState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBatchTest.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBatchTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBlend.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBlend.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBlurUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBlurUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrBufferAllocPool.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrBufferAllocPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrCaps.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrCaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrClip.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrClip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrClipMaskManager.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrClipMaskManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrCoordTransform.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrCoordTransform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDefaultGeoProcFactory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrDefaultGeoProcFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrDrawContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawingManager.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrDrawingManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrDrawTarget.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrDrawTarget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrFragmentProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrFragmentProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrGpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuFactory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrGpuFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuResource.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrGpuResource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrGpuResourceRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrGpuResourceRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrImageIDTextureAdjuster.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrImageIDTextureAdjuster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrInvariantOutput.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrInvariantOutput.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerAtlas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrLayerAtlas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrLayerCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrLayerHoister.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrLayerHoister.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrMemoryPool.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrMemoryPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrOvalRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrOvalRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPaint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPaint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRange.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathRange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRendererChain.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathRendererChain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRendering.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathRendering.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathRenderingDrawContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathRenderingDrawContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPathUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPathUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPipeline.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPipelineBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPipelineBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrPrimitiveProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrPrimitiveProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcessorUnitTest.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrProcessorUnitTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProcOptInfo.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrProcOptInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrProgramElement.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrProgramElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRecordReplaceDraw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrRecordReplaceDraw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRectanizer_pow2.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrRectanizer_pow2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRectanizer_skyline.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrRectanizer_skyline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrReducedClip.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrReducedClip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRenderTarget.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrRenderTarget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrRenderTargetProxy.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrRenderTargetProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrResourceCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrResourceCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrResourceProvider.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrResourceProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrShape.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSoftwarePathRenderer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrSoftwarePathRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStencilAttachment.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrStencilAttachment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStencilSettings.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrStencilSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrStyle.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrStyle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSurface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSurfaceProxy.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrSurfaceProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrSWMaskHelper.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrSWMaskHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTessellator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTessellator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTestUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTestUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTexture.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureAccess.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTextureAccess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureParamsAdjuster.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTextureParamsAdjuster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureProvider.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTextureProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureProxy.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTextureProxy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTextureToYUVPlanes.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTextureToYUVPlanes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrTraceMarker.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrTraceMarker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrXferProcessor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrXferProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\GrYUVProvider.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\GrYUVProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGpuDevice.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\SkGpuDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGpuDevice_drawTexture.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\SkGpuDevice_drawTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGr.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\SkGr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGrPixelRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\SkGrPixelRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\SkGrTexturePixelRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\SkGrTexturePixelRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextBlob.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrAtlasTextBlob.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextBlob_regenInBatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrAtlasTextBlob_regenInBatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrAtlasTextContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrAtlasTextContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrBatchFontCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrBatchFontCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrDistanceFieldAdjustTable.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrDistanceFieldAdjustTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrStencilAndCoverTextContext.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrStencilAndCoverTextContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrTextBlobCache.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrTextBlobCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\gpu\text\GrTextUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\gpu\text\GrTextUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImageShader.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkImageShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Generator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkImage_Generator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Gpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkImage_Gpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkImage_Raster.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkImage_Raster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface_Gpu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkSurface_Gpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\image\SkSurface_Raster.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\image\SkSurface_Raster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkARGBImageEncoder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkARGBImageEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkForceLinking.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkForceLinking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkImageEncoder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkImageEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkImageEncoder_Factory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkImageEncoder_Factory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkKTXImageEncoder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkKTXImageEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkMovie.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkMovie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\images\SkMovie_FactoryDefault.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\images\SkMovie_FactoryDefault.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\lazy\SkDiscardableMemoryPool.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\lazy\SkDiscardableMemoryPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\lazy\SkDiscardablePixelRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\lazy\SkDiscardablePixelRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\opts_check_x86.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\opts_check_x86.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapFilter_opts_SSE2.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkBitmapFilter_opts_SSE2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSE2.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSE2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSSE3.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkBitmapProcState_opts_SSSE3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkBlitRow_opts_SSE2.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkBlitRow_opts_SSE2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkOpts_sse41.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkOpts_sse41.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\opts\SkOpts_ssse3.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\opts\SkOpts_ssse3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkAddIntersections.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkAddIntersections.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDConicLineIntersection.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkDConicLineIntersection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDCubicLineIntersection.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkDCubicLineIntersection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDCubicToQuads.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkDCubicToQuads.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDLineIntersection.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkDLineIntersection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkDQuadLineIntersection.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkDQuadLineIntersection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkIntersections.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkIntersections.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpAngle.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpAngle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpCoincidence.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpCoincidence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpContour.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpContour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpCubicHull.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpCubicHull.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpEdgeBuilder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpEdgeBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpSegment.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpSegment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkOpSpan.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkOpSpan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCommon.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsCommon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsConic.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsConic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCubic.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsCubic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsCurve.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsCurve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsDebug.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsDebug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsLine.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsOp.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsOp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsPoint.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsQuad.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsQuad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsRect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsSimplify.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsSimplify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTightBounds.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsTightBounds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTSect.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsTSect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsTypes.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathOpsWinding.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathOpsWinding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkPathWriter.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkPathWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pathops\SkReduceOrder.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pathops\SkReduceOrder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_android.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkDebug_android.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_stdio.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkDebug_stdio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDebug_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkDebug_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkDiscardableMemory_none.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkDiscardableMemory_none.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontHost_mac.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkFontHost_mac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontHost_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkFontHost_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontMgr_win_dw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkFontMgr_win_dw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkFontMgr_win_dw_factory.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkFontMgr_win_dw_factory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkGlobalInitialization_default.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkGlobalInitialization_default.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageEncoder_CG.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkImageEncoder_CG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageEncoder_WIC.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkImageEncoder_WIC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageGeneratorWIC.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkImageGeneratorWIC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkImageGenerator_skia.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkImageGenerator_skia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkMemory_malloc.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkMemory_malloc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSEnvironment.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkOSEnvironment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSFile_stdio.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkOSFile_stdio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSFile_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkOSFile_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkOSLibrary_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkOSLibrary_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkRemotableFontMgr_win_dw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkRemotableFontMgr_win_dw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkScalerContext_win_dw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkScalerContext_win_dw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkTLS_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkTLS_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\ports\SkTypeface_win_dw.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\ports\SkTypeface_win_dw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\sfnt\SkOTTable_name.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\sfnt\SkOTTable_name.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\sfnt\SkOTUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\sfnt\SkOTUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\mac\SkCreateCGImageRef.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\mac\SkCreateCGImageRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\mac\SkStream_mac.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\mac\SkStream_mac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBase64.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkBase64.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBitmapSourceDeserializer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkBitmapSourceDeserializer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBitSet.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkBitSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkBoundaryPatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkBoundaryPatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCamera.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkCamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCanvasStack.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkCanvasStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkCanvasStateUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkCanvasStateUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkDashPath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkDashPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkDumpCanvas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkDumpCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkEventTracer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkEventTracer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkFrontBufferedStream.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkFrontBufferedStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkInterpolator.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkInterpolator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkLayer.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkMatrix22.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkMatrix22.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkMeshUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkMeshUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNinePatch.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkNinePatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNullCanvas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkNullCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkNWayCanvas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkNWayCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkOSFile.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkOSFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPaintFilterCanvas.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkPaintFilterCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParse.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkParse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParseColor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkParseColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkParsePath.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkParsePath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPatchGrid.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkPatchGrid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkPatchUtils.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkPatchUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkRGBAToYUV.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkRGBAToYUV.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkRTConf.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkRTConf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextBox.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkTextBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkTextureCompressor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_ASTC.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkTextureCompressor_ASTC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_LATC.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkTextureCompressor_LATC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkTextureCompressor_R11EAC.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkTextureCompressor_R11EAC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkThreadUtils_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkThreadUtils_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkWhitelistChecksums.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkWhitelistChecksums.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\SkWhitelistTypefaces.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\SkWhitelistTypefaces.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkAutoCoInitialize.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkAutoCoInitialize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWrite.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkDWrite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWriteFontFileStream.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkDWriteFontFileStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkDWriteGeometrySink.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkDWriteGeometrySink.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkHRESULT.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkHRESULT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkIStream.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkIStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\utils\win\SkWGL_win.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\utils\win\SkWGL_win.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkEvent.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkEventSink.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkEventSink.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\Views\SkOSMenu.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\Views\SkOSMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkTagList.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkTagList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkView.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkViewPriv.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkViewPriv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\views\SkWindow.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\views\SkWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xml\SkDOM.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\xml\SkDOM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xml\SkXMLParser.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\xml\SkXMLParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkDocument_XPS.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\xps\SkDocument_XPS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkDocument_XPS_None.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\xps\SkDocument_XPS_None.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\xps\SkXPSDevice.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\xps\SkXPSDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\common\etc1\etc1.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\common\etc1\etc1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\common\ktx\ktx.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\common\ktx\ktx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\workspace\uiengine\source\third_party\skia\src\pdf\SkDocument_PDF_None.cpp">
+    <ClCompile Include="D:\workspace\uiengine__\source\third_party\skia\src\pdf\SkDocument_PDF_None.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\workspace\uiengine\source\third_party\skia\CMakeLists.txt" />
+    <CustomBuild Include="D:\workspace\uiengine__\source\third_party\skia\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{94D16F20-9C7D-3B8C-83CD-691146963A7C}</UniqueIdentifier>
+      <UniqueIdentifier>{8AF883DF-A06C-34A2-A175-E2AB8E83716D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

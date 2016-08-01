@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{7A4B22DB-3F44-3611-9BE3-A72C4BBA4B4A}</ProjectGUID>
+    <ProjectGUID>{65B89C07-848F-3AFC-99C8-F762ABAEB817}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>HelloCWindowImpl2</ProjectName>
@@ -58,25 +58,25 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\bin\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine__\source\bin\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HelloCWindowImpl2.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HelloCWindowImpl2</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\bin\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine__\source\bin\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HelloCWindowImpl2.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HelloCWindowImpl2</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\bin\MinSizeRel\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine__\source\bin\MinSizeRel\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HelloCWindowImpl2.dir\MinSizeRel\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HelloCWindowImpl2</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\bin\RelWithDebInfo\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine__\source\bin\RelWithDebInfo\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HelloCWindowImpl2.dir\RelWithDebInfo\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HelloCWindowImpl2</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -118,8 +118,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/workspace/uiengine/source/bin/Debug/HelloCWindowImpl2.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/Debug/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/workspace/uiengine__/source/bin/Debug/HelloCWindowImpl2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine__/source/bin/Debug/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
       <Version></Version>
     </Link>
@@ -161,8 +161,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/workspace/uiengine/source/bin/Release/HelloCWindowImpl2.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/Release/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/workspace/uiengine__/source/bin/Release/HelloCWindowImpl2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine__/source/bin/Release/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
       <Version></Version>
     </Link>
@@ -204,8 +204,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/workspace/uiengine/source/bin/MinSizeRel/HelloCWindowImpl2.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/MinSizeRel/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/workspace/uiengine__/source/bin/MinSizeRel/HelloCWindowImpl2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine__/source/bin/MinSizeRel/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
       <Version></Version>
     </Link>
@@ -247,8 +247,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/workspace/uiengine/source/bin/RelWithDebInfo/HelloCWindowImpl2.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/workspace/uiengine/source/bin/RelWithDebInfo/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/workspace/uiengine__/source/bin/RelWithDebInfo/HelloCWindowImpl2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace/uiengine__/source/bin/RelWithDebInfo/HelloCWindowImpl2.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
       <Version></Version>
     </Link>
@@ -257,10 +257,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine__/source -BD:/workspace/uiengine__/source --check-stamp-file D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -268,12 +268,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine__/source -BD:/workspace/uiengine__/source --check-stamp-file D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,12 +281,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine__/source -BD:/workspace/uiengine__/source --check-stamp-file D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -294,12 +294,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine/source -BD:/workspace/uiengine/source --check-stamp-file D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/workspace/uiengine__/source -BD:/workspace/uiengine__/source --check-stamp-file D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,19 +307,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/workspace/uiengine__/source/chapter-01/HelloCWindowImpl2/CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\stdafx.h" />
-    <ClCompile Include="D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\HelloCWindowImpl2.cpp"  />
-    <ClCompile Include="D:\workspace\uiengine\source\chapter-01\HelloCWindowImpl2\stdafx.cpp"  />
+    <ClInclude Include="D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\stdafx.h" />
+    <ClCompile Include="D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\HelloCWindowImpl2.cpp"  />
+    <ClCompile Include="D:\workspace\uiengine__\source\chapter-01\HelloCWindowImpl2\stdafx.cpp"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:/workspace/uiengine/source/ZERO_CHECK.vcxproj">
-      <Project>DA8AB4BA-C0D3-32DF-8E8A-9005C1B0DAD0</Project>
+    <ProjectReference Include="D:/workspace/uiengine__/source/ZERO_CHECK.vcxproj">
+      <Project>9950E646-C31C-3A9F-8F8D-CFEFA05424AF</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
