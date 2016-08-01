@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>2.1 SkBitmap</title>
-<!-- 2016-08-01 ��һ 15:37 -->
+<title>第一章 初识窗口</title>
+<!-- 2016-08-01 ��һ 16:26 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -141,65 +141,17 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="index.html"> HOME </a>
 </div><div id="content">
-<h1 class="title">2.1 SkBitmap</h1>
+<h1 class="title">第一章 初识窗口</h1>
 <p>
-SkBitmap用来指定一个光栅位图(raster bitmap)，这个位图包含宽度和高度信息，另外有一个指针指向像素数据。SkBitmap有两种用法：
-</p>
-<ul class="org-ul">
-<li>作为普通的绘制对象。这种情况下一个SkBitmap对象就是一张图片，和文字一样，只是一个绘制对象。
-</li>
-<li>作为图像绘制的承载。这种情况下，一个SkBitmap仍然可以理解成一张图片，不过这是一张类似于画布的图片，所有的绘制操作都作用在这个图片上。
-</li>
-</ul>
-<p>
-本节我们介绍前面一种，用来展示本地图片到界面。
+在不使用界面引擎的情况下，编写一个界面程序需要编程者创建一个主窗口，在窗口上布局各种windows提供的控件，每个控件都是主窗体的子窗口，都有唯一的窗口句柄HWND来标识。通过HWND控制控件的状态、响应控件事件等。
 </p>
 
 <p>
-SkBitmap作为绘制对象时，因为内部有指向像素数据的指针(bitmap.getPixels())，所以很容易就能展示在界面上。
+我们的界面引擎基于DirectUI技术实现，DirectUI技术的核心是自绘，除了主窗口是必须的，其他所有控件都绘制在主窗口上，没有窗口句柄。本章介绍一点窗口的基础知识，主要介绍一下ATL提供的窗口封装类。
 </p>
-<div class="org-src-container">
-
-<pre class="src src-C++">LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled) {
-        PAINTSTRUCT ps;
-        HDC hdc = BeginPaint(&amp;ps);
-
-        SkBitmap bitmap;
-
-        GetResourceAsBitmap("skia.png", &amp;bitmap);
-
-        BITMAPINFO bmi;
-        memset(&amp;bmi, 0, sizeof(bmi));
-        bmi.bmiHeader.biSize        = sizeof(BITMAPINFOHEADER);
-        bmi.bmiHeader.biWidth       = bitmap.width();
-        bmi.bmiHeader.biHeight      = -bitmap.height();
-        bmi.bmiHeader.biPlanes      = 1;
-        bmi.bmiHeader.biBitCount    = 32;
-        bmi.bmiHeader.biCompression = BI_RGB;
-        bmi.bmiHeader.biSizeImage   = 0;
-
-        bitmap.lockPixels();
-        int ret = SetDIBitsToDevice(hdc,
-                                    40, 30,
-                                    bitmap.width(), bitmap.height(),
-                                    0, 0,
-                                    0, bitmap.height(),
-                                    bitmap.getPixels(),
-                                    &amp;bmi,
-                                    DIB_RGB_COLORS);
-        (void)ret; // we're ignoring potential failures for now.
-        bitmap.unlockPixels();
-
-        EndPaint(&amp;ps);
-
-        bHandled = TRUE;
-        return 0;
-    }
-</pre>
-</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-08-01 ��һ 15:37</p>
+<p class="date">Created: 2016-08-01 ��һ 16:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
