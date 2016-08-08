@@ -16,6 +16,7 @@ public:
  public:
     void Resize(int iWidth, int iHeight);
     SkBitmap &GetBitmap() { return m_bitmap; };
+    SkCanvas *GetCanvas() { return m_pCanvas; };
 
     virtual HRESULT DrawImage(LPCTSTR szImgPath, const RECT *pDst, const RECT *pSrc=NULL);
     virtual HRESULT DrawText(LPCTSTR szText, int x, int y);

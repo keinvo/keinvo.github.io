@@ -32,10 +32,14 @@ class UIWindow
     LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
     LRESULT OnDestroy(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
 
+public:
+    virtual BOOL AfterCreated();
+
 private:
     void doPaint(HDC hdc);
     void OnDraw(CRect *pRect);
 
 private:
+    SkCanvas *m_pCanvas;
     CAtlString m_strBackground;
 };

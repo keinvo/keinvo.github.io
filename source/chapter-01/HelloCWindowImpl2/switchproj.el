@@ -1,5 +1,5 @@
-(defconst slnfile "D:/workspace/uiengine/source/uiengine.sln")
-(defconst projfile "D:/workspace/uiengine/source/chapter-01/HelloCWindowImpl2/HelloCWindowImpl2.vcxproj")
+(defconst slnfile "D:/workspace/keinvo.github.io/source/_build/uiengine.sln")
+(defconst projfile "D:/workspace/keinvo.github.io/source/_build/chapter-01/HelloCWindowImpl2/HelloCWindowImpl2.vcxproj")
 
 (msvc-activate-projects-after-parse :solution-file slnfile
                                     :project-file projfile

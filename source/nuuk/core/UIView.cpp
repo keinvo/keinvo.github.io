@@ -23,6 +23,7 @@ UIView *UIView::get_parent()
 void UIView::AddChild(UIView *pView)
 {
     m_vecChildren.push_back(pView);
+    pView->put_parent(this);
 
     return ;
 }

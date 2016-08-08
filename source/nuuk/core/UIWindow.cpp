@@ -49,8 +49,7 @@ LRESULT UIWindow::OnSize(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled
     UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
     if(pCanvas)
     {
-        int iWidth = LOWORD(lParam);
-        int iHeight = HIWORD(lParam);
+
         pCanvas->Resize(iWidth, iHeight);
     }
 
