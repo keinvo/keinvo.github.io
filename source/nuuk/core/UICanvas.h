@@ -1,4 +1,5 @@
 #pragma once
+#include "UIType.h"
 #include "SkCanvas.h"
 #include "SkBitmap.h"
 #include "../common/Singleton.h"
@@ -18,8 +19,8 @@ public:
     SkBitmap &GetBitmap() { return m_bitmap; };
     SkCanvas *GetCanvas() { return m_pCanvas; };
 
-    virtual HRESULT DrawImage(LPCTSTR szImgPath, const RECT *pDst, const RECT *pSrc=NULL);
-    virtual HRESULT DrawText(LPCTSTR szText, int x, int y);
+    virtual HRESULT DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc=NULL);
+    virtual HRESULT DrawText(BSTR bsText, int x, int y);
     
  protected:
     SkSurfaceProps  m_SurfaceProps;

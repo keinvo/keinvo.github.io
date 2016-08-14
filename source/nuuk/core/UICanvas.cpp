@@ -32,15 +32,18 @@ void UICanvas::Resize(int iWidth, int iHeight)
     return;
 }
 
-HRESULT UICanvas::DrawImage(LPCTSTR szImgPath, const RECT *pDst, const RECT *pSrc)
+HRESULT UICanvas::DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc)
 {
     HRESULT hr = E_FAIL;
 
     do
     {
-        if(nullptr == m_pCanvas ||
-           nullptr == szImgPath ||
-           nullptr == pDst)
+        if(nullptr == m_pCanvas)
+        {
+            hr = E_UNEXPECTED;
+            break;
+        }
+        if(nullptr == pDst)
         {
             hr =  E_INVALIDARG;
             break;
@@ -84,11 +87,23 @@ HRESULT UICanvas::DrawImage(LPCTSTR szImgPath, const RECT *pDst, const RECT *pSr
     return hr;
 }
 
-HRESULT UICanvas::DrawText(LPCTSTR szText, int x, int y)
+HRESULT UICanvas::DrawText(BSTR bsText, int x, int y)
 {
 	HRESULT hr = E_FAIL;
     do
     {
+        if(nullptr == m_pCanvas)
+        {
+            hr = E_UNEXPECTED;
+            break;
+        }
+
+        SkPaint paint;
+
+        const char text[] = "Skia";
+        m_pCanvas->drawText(text, strlen(text), 100.0f, 80.0f, paint);
+
+        
     } while(0);
 
     return hr;

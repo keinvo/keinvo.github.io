@@ -13,7 +13,7 @@ class UIWindow
     UIWindow();
     virtual ~UIWindow();
 
-    void put_background(LPCTSTR szBackground);
+    HRESULT put_background(BSTR bsBackground);
 
     BOOL CreateWin();
 
@@ -22,6 +22,7 @@ class UIWindow
         MESSAGE_HANDLER(WM_NCHITTEST, OnNcHitTest)
         MESSAGE_HANDLER(WM_SIZE, OnSize)
         MESSAGE_HANDLER(WM_PAINT, OnPaint)
+        // MESSAGE_HANDLER(WM_CLOSE, OnClose)
         MESSAGE_HANDLER(WM_DESTROY, OnDestroy)
         END_MSG_MAP()
 
@@ -30,10 +31,12 @@ class UIWindow
     LRESULT OnNcHitTest(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
     LRESULT OnSize(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
     LRESULT OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
+    LRESULT OnClose(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
     LRESULT OnDestroy(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled);
 
 public:
-    virtual BOOL AfterCreated();
+    virtual BOOL OnInit();
+    virtual void OnUninit();
 
 private:
     void doPaint(HDC hdc);
@@ -41,5 +44,5 @@ private:
 
 private:
     SkCanvas *m_pCanvas;
-    CAtlString m_strBackground;
+    CComBSTR m_bsBackground;
 };

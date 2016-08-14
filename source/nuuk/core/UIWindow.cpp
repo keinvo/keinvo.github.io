@@ -16,9 +16,11 @@ UIWindow::UIWindow()
 UIWindow::~UIWindow()
 {}
 
-void UIWindow::put_background(LPCTSTR szBackground)
+HRESULT UIWindow::put_background(BSTR bsBackground)
 {
-    m_strBackground = szBackground;
+    m_bsBackground = bsBackground;
+
+    return S_OK;
 }
 
 BOOL UIWindow::CreateWin()
@@ -29,12 +31,30 @@ BOOL UIWindow::CreateWin()
     ShowWindow(SW_SHOW);
     UpdateWindow();
 
-    return TRUE;
+    // UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
+    // if(pCanvas)
+    // {
+    //     pCanvas->Resize(m_szView.cx, m_szView.cy);
+    // }
+
+    BOOL bRet = OnInit();
+	if (bRet)
+	{
+		Invalidate();
+	}
+	
+	return bRet;
 }
 
 LRESULT UIWindow::OnCreate(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled)
 {
     ModifyStyle(WS_CAPTION, 0);
+
+    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
+    if(pCanvas)
+    {
+        pCanvas->Resize(m_szView.cx, m_szView.cy);
+    }
     
     return 0;
 }
@@ -49,7 +69,8 @@ LRESULT UIWindow::OnSize(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled
     UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
     if(pCanvas)
     {
-
+        int iWidth = LOWORD(lParam);
+        int iHeight = HIWORD(lParam);
         pCanvas->Resize(iWidth, iHeight);
     }
 
@@ -68,6 +89,14 @@ LRESULT UIWindow::OnPaint(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandle
     EndPaint(&ps);
 
     bHandled = TRUE;
+
+    return 0;
+}
+
+LRESULT UIWindow::OnClose(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled)
+{
+    //OnUninit();
+    //bHandled = TRUE;
 
     return 0;
 }
@@ -132,8 +161,18 @@ void UIWindow::OnDraw(CRect *pRect)
     UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
     if(pCanvas)
     {
-        pCanvas->DrawImage(m_strBackground, m_rcView);
+        pCanvas->DrawImage(m_bsBackground, m_rcView);
     }
 
+    return ;
+}
+
+BOOL UIWindow::OnInit()
+{
+    return TRUE;
+}
+
+void UIWindow::OnUninit()
+{
     return ;
 }

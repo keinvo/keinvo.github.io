@@ -7,25 +7,30 @@ CMainWindow::CMainWindow()
 CMainWindow::~CMainWindow()
 {}
 
-BOOL CMainWindow::AfterCreated()
+BOOL CMainWindow::OnInit()
 {
     UILabel *pLabel = new(std::nothrow) UILabel();
     if(pLabel)
     {
-		LPCTSTR pszText = L"Hello Label";
-        pLabel->put_text(pszText);
-        this->AddChild(pLabel);
+        pLabel->put_parent(this);
+        pLabel->put_rect(CRect(80, 60, 160, 120));
+        pLabel->put_text(CComBSTR(L"Hello Label"));
     }
 
     return TRUE;
+}
+
+void CMainWindow::OnUninit()
+{
+    return ;
 }
 
 int APIENTRY _tWinMain(HINSTANCE hinst,
                        HINSTANCE /*hinstPrev*/,
                        LPTSTR    pszCmdLine,
                        int       nCmdShow) {
-    UIWindow wnd;
-    wnd.put_background("abc.png");
+    CMainWindow wnd;
+    wnd.put_background(L"abc.png");
     wnd.CreateWin();
 
     MSG msg;

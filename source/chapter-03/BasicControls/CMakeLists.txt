@@ -80,7 +80,8 @@ file (GLOB FILE_SOURCE
   "../../third_party/skia/tools/flags/SkCommandLineFlags.cpp"
   "../../nuuk/core/UICanvas.cpp"
   "../../nuuk/core/UIView.cpp"
-  "../../nuuk/core/UIWindow.cpp")
+  "../../nuuk/core/UIWindow.cpp"
+  "../../nuuk/controls/UILabel.cpp")
 
 
 source_group("source" FILES ${FILE_SOURCE})

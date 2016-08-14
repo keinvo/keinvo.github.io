@@ -11,12 +11,17 @@ class UIView
     UIView();
     virtual ~UIView();
 
-    void put_name(LPCSTR szName);
-    void put_size(const SIZE &sz);
-    void put_rect(const RECT &rc);
+    HRESULT put_name(BSTR bsName);
+    HRESULT get_name(BSTR *pbsName);
 
-    void put_parent(UIView *pView);
-    UIView *get_parent();
+    HRESULT put_parent(UIView *pView);
+    HRESULT get_parent(UIView **ppView);
+
+    HRESULT put_size(const SIZE &sz);
+    HRESULT get_size(SIZE *psz);
+
+    HRESULT put_rect(const RECT &rc);
+    HRESULT get_rect(RECT *prc);
 
     void AddChild(UIView *pView);
 
@@ -27,7 +32,7 @@ class UIView
  protected:
     UIView *m_pParent;    // parent view
     std::vector<UIView *> m_vecChildren;    // vector of child views
-    CAtlString m_strName;
+    CComBSTR m_bsName;
 	CRect m_rcView;    // rect
     CSize m_szView;    // size
 };

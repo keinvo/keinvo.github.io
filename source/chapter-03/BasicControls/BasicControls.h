@@ -8,6 +8,7 @@ public:
     CMainWindow();
     ~CMainWindow();
 
-protected:
-    BOOL AfterCreated();
+public:
+    virtual BOOL OnInit();
+    virtual void OnUninit();
 };

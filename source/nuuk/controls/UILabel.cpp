@@ -8,14 +8,26 @@ UILabel::UILabel()
 UILabel::~UILabel()
 {}
 
-void UILabel::put_text(LPCTSTR szText)
+HRESULT UILabel::put_text(BSTR bsText)
 {
-    m_strText = szText;
+    m_bsText = bsText;
+
+    return S_OK;
 }
 
-void UILabel::put_color(ARGB32 color)
+HRESULT UILabel::get_text(BSTR *pbsText)
+{
+    CComBSTR bsText = m_bsText;
+    *pbsText = bsText.Detach();
+
+    return S_OK;
+}
+
+HRESULT UILabel::put_color(ARGB32 color)
 {
     m_color = color;
+
+    return S_OK;
 }
 
 void UILabel::OnDraw(CRect *pRect)
@@ -23,7 +35,9 @@ void UILabel::OnDraw(CRect *pRect)
     UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
     if(pCanvas)
     {
-        pCanvas->DrawText(m_strText, 0, 0);
+        SkCanvas *p = pCanvas->GetCanvas();
+        p->drawColor(SK_ColorRED);
+        pCanvas->DrawText(m_bsText, 0, 0);
     }
 
     return ;
