@@ -7,7 +7,7 @@ int APIENTRY _tWinMain(HINSTANCE hinst,
 					   LPTSTR    pszCmdLine,
 					   int       nCmdShow) {
     UIWindow wnd;
-    wnd.put_background("abc.png");
+    wnd.put_background(L"abc.png");
     wnd.CreateWin();
 
     MSG msg;
