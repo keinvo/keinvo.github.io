@@ -49,6 +49,8 @@ HRESULT UICanvas::DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc)
             break;
         }
 
+        char *szImgPath = _com_util::ConvertBSTRToString(bsImgPath);
+
         // CAtlStringA strImgPath = CW2A(szImgPath, CP_UTF8); // vs2015 compiler bug:error C2440: '<function-style-cast>': cannot convert from * to *
         // CAtlString strImgPath = szImgPath;
         // int iLen = strImgPath.GetLength();
@@ -58,7 +60,12 @@ HRESULT UICanvas::DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc)
         // AtlW2AHelper(szImg, (LPCWSTR)szImgPath, iLen, CP_UTF8);
 
         SkBitmap bitmap;
-        bool bRet = GetResourceAsBitmap("abc.png", &bitmap);
+        bool bRet = GetResourceAsBitmap(szImgPath, &bitmap);
+
+        if(szImgPath)
+        {
+            delete[] szImgPath;
+        }
        
         if(!bRet)
         {
