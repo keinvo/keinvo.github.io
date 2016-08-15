@@ -16,12 +16,9 @@ public:
     HRESULT get_text(BSTR *pbsText);
 
     HRESULT put_color(ARGB32 color);
+    HRESULT put_backgroundColor(ARGB32 color);
 
-    HRESULT put_anchor(const RECT rect);
-    HRESULT get_anchor(RECT *pRect);
 
-    HRESULT put_size(const SIZE size);
-    HRESULT get_size(SIZE *pSize);
 
 protected:
     void OnDraw(CRect *pRect);
@@ -29,4 +26,5 @@ protected:
 protected:
     CComBSTR m_bsText;
     ARGB32 m_color;
+    ARGB32 m_backgroundColor;
 };

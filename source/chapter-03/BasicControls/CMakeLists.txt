@@ -87,6 +87,6 @@ file (GLOB FILE_SOURCE
 source_group("source" FILES ${FILE_SOURCE})
 
 add_executable(${PROJNAME} WIN32 ${FILE_SOURCE})
-target_link_libraries(${PROJNAME} skia usp10 opengl32)
+target_link_libraries(${PROJNAME} skia usp10 opengl32 comsuppw.lib)
 
 set_property(TARGET ${PROJNAME} PROPERTY FOLDER ${CHAPTER})

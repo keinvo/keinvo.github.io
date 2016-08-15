@@ -13,7 +13,11 @@ BOOL CMainWindow::OnInit()
     if(pLabel)
     {
         pLabel->put_parent(this);
-        pLabel->put_rect(CRect(80, 60, 160, 120));
+        pLabel->put_marginType(UIMarginLeftTop);
+        pLabel->put_margin(CRect(80, 60, 0, 0));
+        pLabel->put_size(CSize(140, 40));
+        pLabel->put_color(0xffffffff);
+        pLabel->put_backgroundColor(0xff222222);
         pLabel->put_text(CComBSTR(L"Hello Label"));
     }
 

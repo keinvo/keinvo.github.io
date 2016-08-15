@@ -1,6 +1,7 @@
 #include "UICanvas.h"
 #include <atlstr.h>
 #include <atlconv.h>
+#include <comutil.h>
 #include "SkSurface.h"
 #include "skia\tools\Resources.h"
 
@@ -50,23 +51,17 @@ HRESULT UICanvas::DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc)
         }
 
         char *szImgPath = _com_util::ConvertBSTRToString(bsImgPath);
-
-        // CAtlStringA strImgPath = CW2A(szImgPath, CP_UTF8); // vs2015 compiler bug:error C2440: '<function-style-cast>': cannot convert from * to *
-        // CAtlString strImgPath = szImgPath;
-        // int iLen = strImgPath.GetLength();
-
-		// CHAR szImg[MAX_PATH] = { 0 };
-
-        // AtlW2AHelper(szImg, (LPCWSTR)szImgPath, iLen, CP_UTF8);
+        if(!szImgPath)
+        {
+            hr = E_INVALIDARG;
+            break;
+        }
 
         SkBitmap bitmap;
         bool bRet = GetResourceAsBitmap(szImgPath, &bitmap);
 
-        if(szImgPath)
-        {
-            delete[] szImgPath;
-        }
-       
+        delete[] szImgPath;
+
         if(!bRet)
         {
             hr = E_UNEXPECTED;
@@ -94,7 +89,7 @@ HRESULT UICanvas::DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc)
     return hr;
 }
 
-HRESULT UICanvas::DrawText(BSTR bsText, int x, int y)
+HRESULT UICanvas::DrawText(BSTR bsText, int x, int y, ARGB32 color, float fSize)
 {
 	HRESULT hr = E_FAIL;
     do
@@ -106,11 +101,18 @@ HRESULT UICanvas::DrawText(BSTR bsText, int x, int y)
         }
 
         SkPaint paint;
+        paint.setColor(color);
+        paint.setTextSize(fSize);
 
-        const char text[] = "Skia";
-        m_pCanvas->drawText(text, strlen(text), 100.0f, 80.0f, paint);
+        char *szText = _com_util::ConvertBSTRToString(bsText);
+        if(szText)
+        {
+            m_pCanvas->drawText(szText, strlen(szText), x, y, paint);
+//            delete[] szText;
 
-        
+            hr = S_OK;
+        }
+
     } while(0);
 
     return hr;

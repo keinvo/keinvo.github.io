@@ -20,7 +20,7 @@ public:
     SkCanvas *GetCanvas() { return m_pCanvas; };
 
     virtual HRESULT DrawImage(BSTR bsImgPath, const RECT *pDst, const RECT *pSrc=NULL);
-    virtual HRESULT DrawText(BSTR bsText, int x, int y);
+    virtual HRESULT DrawText(BSTR bsText, int x, int y, ARGB32 color, float fSize);
     
  protected:
     SkSurfaceProps  m_SurfaceProps;

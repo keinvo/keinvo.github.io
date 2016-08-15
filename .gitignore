@@ -2,11 +2,5 @@ source/_build/
 source/GPATH
 source/GRTAGS
 source/GTAGS
-source/bin/Debug/*.exe
-source/bin/Debug/*.pdb
-source/bin/Debug/*.lib
-source/bin/Debug/*.dll
-source/bin/Release/*.exe
-source/bin/Release/*.pdb
-source/bin/Release/*.lib
-source/bin/Release/*.dll
+source/bin/Debug/*.*
+source/bin/Release/*.*
