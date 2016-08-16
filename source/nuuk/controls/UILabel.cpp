@@ -40,13 +40,13 @@ HRESULT UILabel::put_backgroundColor(ARGB32 color)
 
 void UILabel::OnDraw(CRect *pRect)
 {
-    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
-    if(pCanvas)
+    UICanvas *pUICanvas = CSingleton<UICanvas>::Instance();
+    if(pUICanvas)
     {
-        SkCanvas *p = pCanvas->GetCanvas();
-        p->drawColor(m_backgroundColor);
+        SkCanvas *pCanvas = pUICanvas->GetCanvas();
+        pCanvas->drawColor(m_backgroundColor);
 
-        pCanvas->DrawText(m_bsText, m_rcView.left+10, m_rcView.top+30, m_color, 18.0f);
+        pUICanvas->DrawText(m_bsText, m_rcView.left+10, m_rcView.top+30, m_color, 18.0f);
     }
 
     return ;

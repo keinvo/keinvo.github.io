@@ -2,10 +2,10 @@
 
 #include "UIView.h"
 
-class CNkButton
+class UIButton
 : public UIView
 {
- public:
+public:
     enum UIButtonState{
         STATE_NORMAL = 0,
         STATE_HOVERED,
@@ -13,30 +13,23 @@ class CNkButton
         STATE_DISABLED,
     };
 
- public:
-    UIButton(void);
-    ~UIButton(void);
+public:
+    UIButton();
+    ~UIButton();
 
-    HRESULT put_anchor(const RECT rect);
-    HRESULT get_anchor(RECT *pRect);
-
-    HRESULT put_size(const SIZE size);
-    HRESULT get_size(SIZE *pSize);
-
+public:
     HRESULT put_text(BSTR bsText);
     HRESULT get_text(BSTR *pbsText);
     
-    HRESULT put_normalBackground(LPCSTR szImgPath);
-    HRESULT put_hoveredBackground(LPCSTR szImgPath);
-    HRESULT put_pressedBackground(LPCSTR szImgPath);
+    HRESULT put_normalBackground(BSTR bsImgPath);
+    HRESULT put_hoveredBackground(BSTR bsImgPath);
+    HRESULT put_pressedBackground(BSTR bsImgPath);
 
- protected:
-    virtual void onDraw(SkCanvas *pCanvas);
+protected:
+    void OnDraw(CRect *pRect);
 
- private:
-    CRect m_rcAnchor;
-    CSize m_sz;
-    CAtlStringA m_strNormalBkg;
-    CAtlStringA m_strHoveredBkg;
-    CAtlStringA m_strPressedBkg;
+private:
+    CComBSTR m_bsNormalBkg;
+    CComBSTR m_bsHoveredBkg;
+    CComBSTR m_bsPressedBkg;
 };

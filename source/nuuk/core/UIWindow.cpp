@@ -50,10 +50,10 @@ LRESULT UIWindow::OnCreate(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandl
 {
     ModifyStyle(WS_CAPTION, 0);
 
-    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
-    if(pCanvas)
+    UICanvas *pUICanvas = CSingleton<UICanvas>::Instance();
+    if(pUICanvas)
     {
-        pCanvas->Resize(m_szView.cx, m_szView.cy);
+        pUICanvas->Resize(m_szView.cx, m_szView.cy);
     }
     
     return 0;
@@ -66,12 +66,12 @@ LRESULT UIWindow::OnNcHitTest(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHa
 
 LRESULT UIWindow::OnSize(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandled)
 {
-    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
-    if(pCanvas)
+    UICanvas *pUICanvas = CSingleton<UICanvas>::Instance();
+    if(pUICanvas)
     {
         int iWidth = LOWORD(lParam);
         int iHeight = HIWORD(lParam);
-        pCanvas->Resize(iWidth, iHeight);
+        pUICanvas->Resize(iWidth, iHeight);
     }
 
     bHandled = TRUE;
@@ -111,15 +111,15 @@ LRESULT UIWindow::OnDestroy(UINT nMsg, WPARAM wParam, LPARAM lParam, BOOL &bHand
 
 void UIWindow::doPaint(HDC hdc) {
 
-    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
-    if(nullptr == pCanvas)
+    UICanvas *pUICanvas = CSingleton<UICanvas>::Instance();
+    if(nullptr == pUICanvas)
     {
         return ;
     }
 
     Draw(NULL);
 
-    const SkBitmap& bitmap = pCanvas->GetBitmap();
+    const SkBitmap& bitmap = pUICanvas->GetBitmap();
 
     BITMAPINFO bmi;
     memset(&bmi, 0, sizeof(bmi));
@@ -158,10 +158,10 @@ void UIWindow::doPaint(HDC hdc) {
 
 void UIWindow::OnDraw(CRect *pRect)
 {
-    UICanvas *pCanvas = CSingleton<UICanvas>::Instance();
-    if(pCanvas)
+    UICanvas *pUICanvas = CSingleton<UICanvas>::Instance();
+    if(pUICanvas)
     {
-        pCanvas->DrawImage(m_bsBackground, m_rcView);
+        pUICanvas->DrawImage(m_bsBackground, m_rcView);
     }
 
     return ;

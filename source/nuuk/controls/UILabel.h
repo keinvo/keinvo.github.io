@@ -1,6 +1,5 @@
 #pragma once
 
-#include "UIType.h"
 #include "UIView.h"
 #include "UICanvas.h"
 
@@ -8,7 +7,7 @@ class UILabel
 : public UIView
 {
 public:
-    UILabel();
+    UILabel(void);
     virtual ~UILabel();
 
 public:
@@ -17,8 +16,6 @@ public:
 
     HRESULT put_color(ARGB32 color);
     HRESULT put_backgroundColor(ARGB32 color);
-
-
 
 protected:
     void OnDraw(CRect *pRect);

@@ -81,7 +81,8 @@ file (GLOB FILE_SOURCE
   "../../nuuk/core/UICanvas.cpp"
   "../../nuuk/core/UIView.cpp"
   "../../nuuk/core/UIWindow.cpp"
-  "../../nuuk/controls/UILabel.cpp")
+  "../../nuuk/controls/UILabel.cpp"
+  "../../nuuk/controls/UIButton.cpp")
 
 
 source_group("source" FILES ${FILE_SOURCE})

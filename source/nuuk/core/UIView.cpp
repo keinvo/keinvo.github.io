@@ -66,73 +66,9 @@ HRESULT UIView::get_marginType(UIMarginType *pType)
 
 HRESULT UIView::put_margin(const RECT &rc)
 {
-    RECT rcParent = {0};
-    if(m_pParent)
-    {
-        m_pParent->get_rect(&rcParent);
-    }
+    m_rcMargin = rc;
 
-    switch(m_UIMarginType)
-    {
-    case UIMarginLeftTop:
-    {
-        m_rcView.left = rcParent.left + rc.left;
-        m_rcView.top = rcParent.top + rc.top;
-    }
-    break;
-
-    case UIMarginLeftCenter:
-    {
-        m_rcView.left = rcParent.left + rc.left;
-        m_rcView.top = rcParent.top + (rcParent.bottom - rcParent.top)/2;
-    }
-    break;
-
-    case UIMarginLeftBottom:
-    {
-        m_rcView.left = rcParent.left + rc.left;
-        m_rcView.bottom = rcParent.bottom - rc.bottom;
-    }
-    break;
-
-    case UIMarginCenterTop:
-    {
-        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
-        m_rcView.top = rcParent.top + rc.top;
-    }
-    break;
-
-    case UIMarginCenter:
-    {
-        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
-        m_rcView.top = rcParent.top + (rcParent.bottom - rcParent.top)/2;
-    }
-    break;
-
-    case UIMarginCenterBottom:
-    {
-        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
-        m_rcView.bottom = rcParent.bottom - rc.bottom;
-    }
-    break;
-
-    case UIMarginRightTop:
-    {
-
-    }
-    break;
-
-    case UIMarginRightCenter:
-    {
-    }
-    break;
-
-    case UIMarginRightBottom:
-    {
-    }
-    break;
-    }
-
+    Arrange();
 
     return S_OK;
 }
@@ -170,10 +106,9 @@ HRESULT UIView::get_autoHeight(BOOL *pbAuto)
 
 HRESULT UIView::put_size(const SIZE &sz)
 {
-    m_rcView.right = m_rcView.left + sz.cx;
-    m_rcView.bottom = m_rcView.top + sz.cy;
-
     m_szView = sz;
+
+    Arrange();
 
     return S_OK;
 }
@@ -197,6 +132,87 @@ HRESULT UIView::get_rect(RECT *prc)
     *prc = m_rcView;
 
     return S_OK;
+}
+
+void UIView::Arrange()
+{
+    RECT rcParent = {0};
+    if(m_pParent)
+    {
+        m_pParent->get_rect(&rcParent);
+    }
+
+    switch(m_UIMarginType)
+    {
+    case UIMarginLeftTop:
+    {
+        m_rcView.left = rcParent.left + m_rcMargin.left;
+        m_rcView.top = rcParent.top + m_rcMargin.top;
+        m_rcView.right = m_rcView.left + m_szView.cx;
+        m_rcView.bottom = m_rcView.top + m_szView.cy;
+    }
+    break;
+
+    case UIMarginLeftCenter:
+    {
+        m_rcView.left = rcParent.left + m_rcMargin.left;
+        m_rcView.top = rcParent.top + (rcParent.bottom - rcParent.top)/2;
+    }
+    break;
+
+    case UIMarginLeftBottom:
+    {
+        m_rcView.left = rcParent.left + m_rcMargin.left;
+        m_rcView.bottom = rcParent.bottom - m_rcMargin.bottom;
+    }
+    break;
+
+    case UIMarginCenterTop:
+    {
+        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
+        m_rcView.top = rcParent.top + m_rcMargin.top;
+    }
+    break;
+
+    case UIMarginCenter:
+    {
+        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
+        m_rcView.top = rcParent.top + (rcParent.bottom - rcParent.top)/2;
+    }
+    break;
+
+    case UIMarginCenterBottom:
+    {
+        m_rcView.left = rcParent.left + (rcParent.right - rcParent.left)/2;
+        m_rcView.bottom = rcParent.bottom - m_rcMargin.bottom;
+    }
+    break;
+
+    case UIMarginRightTop:
+    {
+        m_rcView.right = rcParent.right - m_rcMargin.right;
+        m_rcView.top = rcParent.top + m_rcMargin.top;
+        m_rcView.left = m_rcView.right - m_szView.cx;
+        m_rcView.bottom = m_rcView.top + m_szView.cy;
+    }
+    break;
+
+    case UIMarginRightCenter:
+    {
+        m_rcView.right = rcParent.right - m_rcMargin.right;
+        m_rcView.top = rcParent.top + (rcParent.bottom - rcParent.top)/2;
+    }
+    break;
+
+    case UIMarginRightBottom:
+    {
+        m_rcView.right = rcParent.right - m_rcMargin.right;
+        m_rcView.bottom = rcParent.bottom - m_rcMargin.bottom;
+    }
+    break;
+    }
+
+    return ;
 }
 
 void UIView::AddChild(UIView *pView)

@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <atltypes.h>
 #include <atlstr.h>
+#include "UIType.h"
 
 enum UIMarginType
 {
@@ -54,7 +55,10 @@ class UIView
 
     virtual void  OnDraw(CRect *pRect) = 0;
 
- protected:
+protected:
+    void Arrange();
+
+protected:
     UIView *m_pParent;    // parent view
     std::vector<UIView *> m_vecChildren;    // vector of child views
     CComBSTR m_bsName;
